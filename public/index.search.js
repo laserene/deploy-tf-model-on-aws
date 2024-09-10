@@ -17,16 +17,16 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
-    "content": "Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent VPC Subnet Route Table Security Group Internet Gateway",
-    "description": "Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent VPC Subnet Route Table Security Group Internet Gateway",
+    "content": "In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.\nContent VPC Subnet Route Table Security Group Internet Gateway",
+    "description": "In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.\nContent VPC Subnet Route Table Security Group Internet Gateway",
     "tags": [],
     "title": "1. VPC in AWS",
     "uri": "/1-vpc-in-aws/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
-    "content": "",
-    "description": "",
+    "content": "Create VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.\nClick Actions. Click Edit VPC Setting.",
+    "description": "Create VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.\nClick Actions. Click Edit VPC Setting.",
     "tags": [],
     "title": "1.1 VPC",
     "uri": "/1-vpc-in-aws/1-vpc/index.html"

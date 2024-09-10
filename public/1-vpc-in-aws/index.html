@@ -5,39 +5,39 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
     <meta name="generator" content="Relearn 6.3.0+tip">
-    <meta name="description" content="Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
+    <meta name="description" content="In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.
 Content VPC Subnet Route Table Security Group Internet Gateway">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="1. VPC in AWS :: My New Hugo Site">
-    <meta name="twitter:description" content="Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
+    <meta name="twitter:description" content="In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.
 Content VPC Subnet Route Table Security Group Internet Gateway">
     <meta property="og:url" content="http://localhost:1313/1-vpc-in-aws/index.html">
     <meta property="og:site_name" content="My New Hugo Site">
     <meta property="og:title" content="1. VPC in AWS :: My New Hugo Site">
-    <meta property="og:description" content="Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
+    <meta property="og:description" content="In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.
 Content VPC Subnet Route Table Security Group Internet Gateway">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="1. VPC in AWS :: My New Hugo Site">
-    <meta itemprop="description" content="Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.
+    <meta itemprop="description" content="In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.
 Content VPC Subnet Route Table Security Group Internet Gateway">
     <meta itemprop="datePublished" content="2024-09-10T15:10:14+07:00">
     <meta itemprop="dateModified" content="2024-09-10T15:10:14+07:00">
-    <meta itemprop="wordCount" content="34">
+    <meta itemprop="wordCount" content="76">
     <title>1. VPC in AWS :: My New Hugo Site</title>
     <link href="/1-vpc-in-aws/index.xml" rel="alternate" type="application/rss+xml" title="1. VPC in AWS :: My New Hugo Site">
-    <link href="/css/fontawesome-all.min.css?1725965233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725965233" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1725965233" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725965233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725965233" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1725965233" rel="stylesheet">
-    <link href="/css/fonts.css?1725965233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725965233" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1725965233" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1725965233" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-light.css?1725965233" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1725965233" rel="stylesheet">
-    <link href="/css/print.css?1725965233" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1725965233"></script>
+    <link href="/css/fontawesome-all.min.css?1725968690" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725968690" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725968690" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725968690" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725968690" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725968690" rel="stylesheet">
+    <link href="/css/fonts.css?1725968690" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725968690" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725968690" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1725968690" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-light.css?1725968690" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725968690" rel="stylesheet">
+    <link href="/css/print.css?1725968690" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725968690"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -45,7 +45,7 @@ Content VPC Subnet Route Table Security Group Internet Gateway">
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/index.search.js?1725965233";
+      window.index_js_url="/index.search.js?1725968690";
       // variant stuff
       window.variants && variants.init( [ 'relearn-light' ] );
       // translations
@@ -74,7 +74,6 @@ Content VPC Subnet Route Table Security Group Internet Gateway">
   <ul>
     <li>
       <ul>
-        <li><a href="#overall">Overall</a></li>
         <li><a href="#content">Content</a></li>
       </ul>
     </li>
@@ -114,11 +113,10 @@ Content VPC Subnet Route Table Security Group Internet Gateway">
 
 <h1 id="1-vpc-in-aws">1. VPC in AWS</h1>
 
-<h3 id="overall">Overall</h3>
-<p>In this lab, you&rsquo;ll learn the basics and practice of Amazon  System Manager - Session Manager
-. Perform creating public and private instance connections.</p>
-<p><a href="#R-image-d79eb96e810c473aa456a453c91af77a" class="lightbox-link"><img alt="ConnectPrivate" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/arc-log.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d79eb96e810c473aa456a453c91af77a"><img alt="ConnectPrivate" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/arc-log.png"></a></p>
+<p>In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks
+in the AWS cloud. You can launch your AWS resources, such as <strong>EC2 instances</strong>, into your VPC.
+You can specify an IP address range for the VPC, add <strong>Subnets</strong>, associate <strong>Security Groups</strong>, and configure
+<strong>Route Tables</strong>. Finally, you can connect your VPC to the internet via <strong>Internet Gateway</strong>.</p>
 <h3 id="content">Content</h3>
 <ol>
 <li><a href="/1-vpc-in-aws/1-vpc/index.html">VPC</a></li>
@@ -154,12 +152,12 @@ Content VPC Subnet Route Table Security Group Internet Gateway">
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1725965233" defer></script>
-        <script src="/js/lunr/lunr.min.js?1725965233" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1725965233" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1725965233" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1725965233" defer></script>
-        <script src="/js/search.js?1725965233" defer></script>
+        <script src="/js/auto-complete.js?1725968690" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725968690" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725968690" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725968690" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725968690" defer></script>
+        <script src="/js/search.js?1725968690" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -236,8 +234,8 @@ Content VPC Subnet Route Table Security Group Internet Gateway">
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1725965233" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1725965233" defer></script>
-    <script src="/js/theme.js?1725965233" defer></script>
+    <script src="/js/clipboard.min.js?1725968690" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725968690" defer></script>
+    <script src="/js/theme.js?1725968690" defer></script>
   </body>
 </html>

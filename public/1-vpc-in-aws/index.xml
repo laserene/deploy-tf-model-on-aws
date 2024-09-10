@@ -3,7 +3,7 @@
   <channel>
     <title>1. VPC in AWS :: My New Hugo Site</title>
     <link>http://localhost:1313/1-vpc-in-aws/index.html</link>
-    <description>Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.&#xA;Content VPC Subnet Route Table Security Group Internet Gateway</description>
+    <description>In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.&#xA;Content VPC Subnet Route Table Security Group Internet Gateway</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Sep 2024 15:10:14 +0700</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/1-vpc-in-aws/1-vpc/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:09:31 +0700</pubDate>
       <guid>http://localhost:1313/1-vpc-in-aws/1-vpc/index.html</guid>
-      <description></description>
+      <description>Create VPC Go to VPC management console.&#xA;Click Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:&#xA;Choose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.&#xA;Click Actions. Click Edit VPC Setting.</description>
     </item>
     <item>
       <title>1.2 Subnet</title>
