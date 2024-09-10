@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1. VPC :: My New Hugo Site</title>
+    <title>1.1 VPC :: My New Hugo Site</title>
     <link>http://localhost:1313/1-vpc-in-aws/1-vpc/index.html</link>
     <description></description>
     <generator>Hugo</generator>

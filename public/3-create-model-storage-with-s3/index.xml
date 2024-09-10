@@ -9,14 +9,14 @@
     <lastBuildDate>Tue, 10 Sep 2024 15:19:23 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/3-create-model-storage-with-s3/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. Create Gateway Endpoint</title>
+      <title>3.1 Create Gateway Endpoint</title>
       <link>http://localhost:1313/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:18:54 +0700</pubDate>
       <guid>http://localhost:1313/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>2. Upload Model to S3</title>
+      <title>3.2 Upload Model to S3</title>
       <link>http://localhost:1313/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:19:23 +0700</pubDate>
       <guid>http://localhost:1313/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html</guid>

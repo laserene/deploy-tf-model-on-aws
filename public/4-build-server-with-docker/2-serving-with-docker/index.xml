@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2. Serving with Docker :: My New Hugo Site</title>
+    <title>4.2 Serving with Docker :: My New Hugo Site</title>
     <link>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</link>
     <description></description>
     <generator>Hugo</generator>

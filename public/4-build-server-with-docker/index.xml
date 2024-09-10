@@ -9,14 +9,14 @@
     <lastBuildDate>Tue, 10 Sep 2024 15:12:23 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/4-build-server-with-docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. Test Connection</title>
+      <title>4.1 Test Connection</title>
       <link>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:12:10 +0700</pubDate>
       <guid>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>2. Serving with Docker</title>
+      <title>4.2 Serving with Docker</title>
       <link>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:12:23 +0700</pubDate>
       <guid>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</guid>
