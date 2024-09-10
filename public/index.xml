@@ -20,14 +20,14 @@
       <link>http://localhost:1313/2-establish-ec2-server/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/2-establish-ec2-server/index.html</guid>
-      <description>Create EC2 Instance Go to EC2 Console and click “Instances”:&#xA;Click “Launch Instance” to create a new instance. !(EC2 Console)[/images/2-establish-ec2-server/img-1.png]</description>
+      <description>Create EC2 Instance Go to EC2 Console and click “Instances”:&#xA;Click “Launch Instance” to create a new instance. In the Launch an instance tab:&#xA;Name tag: Inference Server AMI: Amazon Linux 2023 AMI Instance Type: t2.micro In the key pair section, create a new key pair named key-pair-inference-1 of type RSA in .ppk format and download it. This key pair will be used to connect to the instance.&#xA;In the Network settings section, select the Edit button.</description>
     </item>
     <item>
       <title>3. Create Model Storage with S3</title>
       <link>http://localhost:1313/3-create-model-storage-with-s3/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:19:23 +0700</pubDate>
       <guid>http://localhost:1313/3-create-model-storage-with-s3/index.html</guid>
-      <description>This is a new chapter.</description>
+      <description>Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance at highest durability for a variety of use cases.&#xA;In this lab, you will use Amazon S3 to store current model files as well as any other versions in the future.&#xA;Content Create Gateway Endpoint Upload model to S3</description>
     </item>
     <item>
       <title>4. Build Server with Docker</title>

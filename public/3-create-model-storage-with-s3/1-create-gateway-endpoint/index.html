@@ -5,31 +5,51 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
     <meta name="generator" content="Relearn 6.3.0+tip">
-    <meta name="description" content="">
+    <meta name="description" content="Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.
+Besides gateway endpoint, S3 and DynamoDB also support interface endpoint.
+In this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.
+Create IAM Role for reading files from S3 Go to IAM Console:
+Click Roles, then Create role.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="3.1 Create Gateway Endpoint :: My New Hugo Site">
+    <meta name="twitter:description" content="Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.
+Besides gateway endpoint, S3 and DynamoDB also support interface endpoint.
+In this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.
+Create IAM Role for reading files from S3 Go to IAM Console:
+Click Roles, then Create role.">
     <meta property="og:url" content="http://localhost:1313/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html">
     <meta property="og:site_name" content="My New Hugo Site">
     <meta property="og:title" content="3.1 Create Gateway Endpoint :: My New Hugo Site">
+    <meta property="og:description" content="Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.
+Besides gateway endpoint, S3 and DynamoDB also support interface endpoint.
+In this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.
+Create IAM Role for reading files from S3 Go to IAM Console:
+Click Roles, then Create role.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="3.1 Create Gateway Endpoint :: My New Hugo Site">
+    <meta itemprop="description" content="Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.
+Besides gateway endpoint, S3 and DynamoDB also support interface endpoint.
+In this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.
+Create IAM Role for reading files from S3 Go to IAM Console:
+Click Roles, then Create role.">
     <meta itemprop="datePublished" content="2024-09-10T15:18:54+07:00">
     <meta itemprop="dateModified" content="2024-09-10T15:18:54+07:00">
+    <meta itemprop="wordCount" content="198">
     <title>3.1 Create Gateway Endpoint :: My New Hugo Site</title>
     <link href="/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.xml" rel="alternate" type="application/rss+xml" title="3.1 Create Gateway Endpoint :: My New Hugo Site">
-    <link href="/css/fontawesome-all.min.css?1725988745" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725988745" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1725988745" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725988745" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725988745" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1725988745" rel="stylesheet">
-    <link href="/css/fonts.css?1725988745" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725988745" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1725988745" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1725988745" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-light.css?1725988745" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1725988745" rel="stylesheet">
-    <link href="/css/print.css?1725988745" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1725988745"></script>
+    <link href="/css/fontawesome-all.min.css?1725993496" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725993496" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725993496" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725993496" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725993496" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725993496" rel="stylesheet">
+    <link href="/css/fonts.css?1725993496" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725993496" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725993496" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1725993496" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-light.css?1725993496" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725993496" rel="stylesheet">
+    <link href="/css/print.css?1725993496" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725993496"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -37,7 +57,7 @@
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/index.search.js?1725988745";
+      window.index_js_url="/index.search.js?1725993496";
       // variant stuff
       window.variants && variants.init( [ 'relearn-light' ] );
       // translations
@@ -62,7 +82,17 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#create-iam-role-for-reading-files-from-s3">Create IAM Role for reading files from S3</a></li>
+        <li><a href="#attach-iam-role-to-ec2-instance">Attach IAM Role to EC2 Instance</a></li>
+        <li><a href="#create-gateway-endpoint">Create Gateway Endpoint</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -97,6 +127,75 @@
 
 <h1 id="31-create-gateway-endpoint">3.1 Create Gateway Endpoint</h1>
 
+<p>Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway
+and no additional charge.</p>
+<p>Besides gateway endpoint, S3 and DynamoDB also support interface endpoint.</p>
+<p>In this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for
+reading from S3.</p>
+<h3 id="create-iam-role-for-reading-files-from-s3">Create IAM Role for reading files from S3</h3>
+<ol>
+<li>
+<p>Go to <a href="https://console.aws.amazon.com/iam/home" rel="external" target="_blank">IAM Console</a>:</p>
+<ul>
+<li>Click <em>Roles</em>, then <em>Create role</em>.</li>
+</ul>
+<p><a href="#R-image-1407a39d4a3c426b1633a1e3eb913ddd" class="lightbox-link"><img alt="IAM Console" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1407a39d4a3c426b1633a1e3eb913ddd"><img alt="IAM Console" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-1.png"></a></p>
+<ul>
+<li><strong>Trusted entity</strong>: AWS service</li>
+<li><strong>Use case</strong>: EC2</li>
+</ul>
+<p>In the <em>Add permission</em> tab, type <strong>S3</strong> in the search bar and check the <strong>AmazonS3ReadOnlyAccess</strong>
+policy.</p>
+<p>In the <em>Name, review and create</em> tab:</p>
+<ul>
+<li><strong>Role name</strong>: <code>role-ec2-s3-read-only</code></li>
+</ul>
+<p>Leave the rest as default and click <em>Create role</em>.</p>
+</li>
+</ol>
+<h3 id="attach-iam-role-to-ec2-instance">Attach IAM Role to EC2 Instance</h3>
+<ol>
+<li>
+<p>Go to <a href="https://console.aws.amazon.com/ec2/home" rel="external" target="_blank">EC2 Console</a>:</p>
+<ul>
+<li>Click <em>Instances</em>, then select the instance you want to attach the role to.</li>
+<li>Click <em>Actions</em>, then <em>Security</em>, then <em>Modify IAM role</em>.</li>
+</ul>
+<p><a href="#R-image-8488e13a829a760f10b7375395d028a7" class="lightbox-link"><img alt="EC2 Console" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8488e13a829a760f10b7375395d028a7"><img alt="EC2 Console" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-2.png"></a></p>
+<ul>
+<li><strong>IAM role</strong>: <code>role-ec2-s3-read-only</code></li>
+<li>Click <em>Update IAM Role</em>.</li>
+</ul>
+<p><a href="#R-image-f3481ad017c33b91518981bad7b8a900" class="lightbox-link"><img alt="IAM Attach Role" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f3481ad017c33b91518981bad7b8a900"><img alt="IAM Attach Role" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-3.png"></a></p>
+</li>
+</ol>
+<h3 id="create-gateway-endpoint">Create Gateway Endpoint</h3>
+<ol>
+<li>
+<p>Go to <a href="https://console.aws.amazon.com/vpc/home" rel="external" target="_blank">VPC Console</a>:</p>
+<ul>
+<li>Click <em>Endpoints</em>, then <em>Create endpoint</em>.</li>
+</ul>
+<p><a href="#R-image-844765843305c832661a98f5587595f1" class="lightbox-link"><img alt="VPC Console" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-844765843305c832661a98f5587595f1"><img alt="VPC Console" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-4.png"></a></p>
+</li>
+<li>
+<p>In the <em>Create endpoint</em> tab:</p>
+<ul>
+<li><strong>Name tag</strong>: <code>gw-endpoint-inference-1</code></li>
+<li><strong>Service category</strong>: AWS services</li>
+<li><strong>Service Name</strong>: <code>com.amazonaws.ap-southeast-1.s3</code> of <code>Gateway</code> type.</li>
+<li><strong>VPC</strong>: <code>vpc-inference-1</code></li>
+<li><strong>Route tables</strong>: <code>table-inference-1</code></li>
+</ul>
+<p>Leave the rest as default and click <em>Create endpoint</em>.</p>
+<p><a href="#R-image-8ddb457006d69bf5fbdb4d12d73af00e" class="lightbox-link"><img alt="Create Endpoint" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-5.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8ddb457006d69bf5fbdb4d12d73af00e"><img alt="Create Endpoint" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/3-create-model-storage-with-s3/img-5.png"></a></p>
+</li>
+</ol>
 
             <footer class="footline">
             </footer>
@@ -124,12 +223,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1725988745" defer></script>
-        <script src="/js/lunr/lunr.min.js?1725988745" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1725988745" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1725988745" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1725988745" defer></script>
-        <script src="/js/search.js?1725988745" defer></script>
+        <script src="/js/auto-complete.js?1725993496" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725993496" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725993496" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725993496" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725993496" defer></script>
+        <script src="/js/search.js?1725993496" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -206,8 +305,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1725988745" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1725988745" defer></script>
-    <script src="/js/theme.js?1725988745" defer></script>
+    <script src="/js/clipboard.min.js?1725993496" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725993496" defer></script>
+    <script src="/js/theme.js?1725993496" defer></script>
   </body>
 </html>

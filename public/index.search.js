@@ -1,8 +1,8 @@
 var relearn_search_index = [
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 3. Create Model Storage with S3",
-    "content": "",
-    "description": "",
+    "content": "Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.\nBesides gateway endpoint, S3 and DynamoDB also support interface endpoint.\nIn this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.\nCreate IAM Role for reading files from S3 Go to IAM Console:\nClick Roles, then Create role. Trusted entity: AWS service Use case: EC2 In the Add permission tab, type S3 in the search bar and check the AmazonS3ReadOnlyAccess policy.\nIn the Name, review and create tab:\nRole name: role-ec2-s3-read-only Leave the rest as default and click Create role.\nAttach IAM Role to EC2 Instance Go to EC2 Console:\nClick Instances, then select the instance you want to attach the role to. Click Actions, then Security, then Modify IAM role. IAM role: role-ec2-s3-read-only Click Update IAM Role. Create Gateway Endpoint Go to VPC Console:\nClick Endpoints, then Create endpoint. In the Create endpoint tab:\nName tag: gw-endpoint-inference-1 Service category: AWS services Service Name: com.amazonaws.ap-southeast-1.s3 of Gateway type. VPC: vpc-inference-1 Route tables: table-inference-1 Leave the rest as default and click Create endpoint.",
+    "description": "Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.\nBesides gateway endpoint, S3 and DynamoDB also support interface endpoint.\nIn this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.\nCreate IAM Role for reading files from S3 Go to IAM Console:\nClick Roles, then Create role.",
     "tags": [],
     "title": "3.1 Create Gateway Endpoint",
     "uri": "/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html"
@@ -33,8 +33,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 3. Create Model Storage with S3",
-    "content": "",
-    "description": "",
+    "content": "Create S3 Bucket Go to S3 Console:\nClick Bucket, then Create bucket. In the Create bucket tab:\nBucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.\nUpload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.\nClick Add folder, navigate to the model folder to S3 then click Upload.",
+    "description": "Create S3 Bucket Go to S3 Console:\nClick Bucket, then Create bucket. In the Create bucket tab:\nBucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.\nUpload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.\nClick Add folder, navigate to the model folder to S3 then click Upload.",
     "tags": [],
     "title": "3.2 Upload Model to S3",
     "uri": "/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html"
@@ -57,16 +57,16 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
-    "content": "Create EC2 Instance Go to EC2 Console and click “Instances”:\nClick “Launch Instance” to create a new instance. !(EC2 Console)[/images/2-establish-ec2-server/img-1.png]",
-    "description": "Create EC2 Instance Go to EC2 Console and click “Instances”:\nClick “Launch Instance” to create a new instance. !(EC2 Console)[/images/2-establish-ec2-server/img-1.png]",
+    "content": "Create EC2 Instance Go to EC2 Console and click “Instances”:\nClick “Launch Instance” to create a new instance. In the Launch an instance tab:\nName tag: Inference Server AMI: Amazon Linux 2023 AMI Instance Type: t2.micro In the key pair section, create a new key pair named key-pair-inference-1 of type RSA in .ppk format and download it. This key pair will be used to connect to the instance.\nIn the Network settings section, select the Edit button.\nChoose the VPC with tag name vpc-inference-1. Choose the subnet with tag name subnet-inference-1. Enable auto-assign public IP. Select existing security group sg-inference-1. Click Launch instance.",
+    "description": "Create EC2 Instance Go to EC2 Console and click “Instances”:\nClick “Launch Instance” to create a new instance. In the Launch an instance tab:\nName tag: Inference Server AMI: Amazon Linux 2023 AMI Instance Type: t2.micro In the key pair section, create a new key pair named key-pair-inference-1 of type RSA in .ppk format and download it. This key pair will be used to connect to the instance.\nIn the Network settings section, select the Edit button.",
     "tags": [],
     "title": "2. Establish EC2 Server",
     "uri": "/2-establish-ec2-server/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
-    "content": "This is a new chapter.",
-    "description": "This is a new chapter.",
+    "content": "Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance at highest durability for a variety of use cases.\nIn this lab, you will use Amazon S3 to store current model files as well as any other versions in the future.\nContent Create Gateway Endpoint Upload model to S3",
+    "description": "Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance at highest durability for a variety of use cases.\nIn this lab, you will use Amazon S3 to store current model files as well as any other versions in the future.\nContent Create Gateway Endpoint Upload model to S3",
     "tags": [],
     "title": "3. Create Model Storage with S3",
     "uri": "/3-create-model-storage-with-s3/index.html"
