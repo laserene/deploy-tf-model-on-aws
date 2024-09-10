@@ -4,7 +4,7 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "1. Create Gateway Endpoint",
+    "title": "3.1 Create Gateway Endpoint",
     "uri": "/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html"
   },
   {
@@ -12,7 +12,7 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "1. Test Connection",
+    "title": "4.1 Test Connection",
     "uri": "/4-build-server-with-docker/1-test-connection/index.html"
   },
   {
@@ -20,15 +20,15 @@ var relearn_search_index = [
     "content": "This is a new chapter.",
     "description": "This is a new chapter.",
     "tags": [],
-    "title": "VPC in AWS",
+    "title": "1. VPC in AWS",
     "uri": "/1-vpc-in-aws/index.html"
   },
   {
-    "breadcrumb": "VPC in AWS",
+    "breadcrumb": "1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "1. VPC",
+    "title": "1.1 VPC",
     "uri": "/1-vpc-in-aws/1-vpc/index.html"
   },
   {
@@ -36,7 +36,7 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "2. Upload Model to S3",
+    "title": "3.2 Upload Model to S3",
     "uri": "/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html"
   },
   {
@@ -44,15 +44,15 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "2. Serving with Docker",
+    "title": "4.2 Serving with Docker",
     "uri": "/4-build-server-with-docker/2-serving-with-docker/index.html"
   },
   {
-    "breadcrumb": "VPC in AWS",
+    "breadcrumb": "1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "2. Subnet",
+    "title": "1.2 Subnet",
     "uri": "/1-vpc-in-aws/2-subnet/index.html"
   },
   {
@@ -72,11 +72,11 @@ var relearn_search_index = [
     "uri": "/3-create-model-storage-with-s3/index.html"
   },
   {
-    "breadcrumb": "VPC in AWS",
+    "breadcrumb": "1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "3. Route Table",
+    "title": "1.3 Route Table",
     "uri": "/1-vpc-in-aws/3-route-table/index.html"
   },
   {
@@ -88,19 +88,19 @@ var relearn_search_index = [
     "uri": "/4-build-server-with-docker/index.html"
   },
   {
-    "breadcrumb": "VPC in AWS",
+    "breadcrumb": "1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "4. Security Group",
+    "title": "1.4 Security Group",
     "uri": "/1-vpc-in-aws/4-security-group/index.html"
   },
   {
-    "breadcrumb": "VPC in AWS",
+    "breadcrumb": "1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "5. Internet Gateway",
+    "title": "1.5 Internet Gateway",
     "uri": "/1-vpc-in-aws/5-internet-gateway/index.html"
   },
   {

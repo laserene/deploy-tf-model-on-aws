@@ -9,7 +9,7 @@
     <lastBuildDate>Tue, 10 Sep 2024 15:19:23 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VPC in AWS</title>
+      <title>1. VPC in AWS</title>
       <link>http://localhost:1313/1-vpc-in-aws/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:10:14 +0700</pubDate>
       <guid>http://localhost:1313/1-vpc-in-aws/index.html</guid>
