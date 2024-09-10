@@ -5,31 +5,47 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
     <meta name="generator" content="Relearn 6.3.0+tip">
-    <meta name="description" content="">
+    <meta name="description" content="A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
+Create Security Group At the VPC management console:
+Click Security groups. Click Create security group. At the Create security group page, enter the following information:
+Name tag: security-group-inference-1. Description: Allow SSH to developers.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="1.4 Security Group :: My New Hugo Site">
+    <meta name="twitter:description" content="A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
+Create Security Group At the VPC management console:
+Click Security groups. Click Create security group. At the Create security group page, enter the following information:
+Name tag: security-group-inference-1. Description: Allow SSH to developers.">
     <meta property="og:url" content="http://localhost:1313/1-vpc-in-aws/4-security-group/index.html">
     <meta property="og:site_name" content="My New Hugo Site">
     <meta property="og:title" content="1.4 Security Group :: My New Hugo Site">
+    <meta property="og:description" content="A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
+Create Security Group At the VPC management console:
+Click Security groups. Click Create security group. At the Create security group page, enter the following information:
+Name tag: security-group-inference-1. Description: Allow SSH to developers.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="1.4 Security Group :: My New Hugo Site">
+    <meta itemprop="description" content="A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
+Create Security Group At the VPC management console:
+Click Security groups. Click Create security group. At the Create security group page, enter the following information:
+Name tag: security-group-inference-1. Description: Allow SSH to developers.">
     <meta itemprop="datePublished" content="2024-09-10T15:09:58+07:00">
     <meta itemprop="dateModified" content="2024-09-10T15:09:58+07:00">
+    <meta itemprop="wordCount" content="186">
     <title>1.4 Security Group :: My New Hugo Site</title>
     <link href="/1-vpc-in-aws/4-security-group/index.xml" rel="alternate" type="application/rss+xml" title="1.4 Security Group :: My New Hugo Site">
-    <link href="/css/fontawesome-all.min.css?1725965370" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725965370" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1725965370" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725965370" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725965370" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1725965370" rel="stylesheet">
-    <link href="/css/fonts.css?1725965370" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725965370" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1725965370" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1725965370" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-light.css?1725965370" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1725965370" rel="stylesheet">
-    <link href="/css/print.css?1725965370" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1725965370"></script>
+    <link href="/css/fontawesome-all.min.css?1725984179" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725984179" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725984179" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725984179" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725984179" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725984179" rel="stylesheet">
+    <link href="/css/fonts.css?1725984179" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725984179" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725984179" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1725984179" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-light.css?1725984179" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725984179" rel="stylesheet">
+    <link href="/css/print.css?1725984179" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725984179"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -37,7 +53,7 @@
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/index.search.js?1725965370";
+      window.index_js_url="/index.search.js?1725984179";
       // variant stuff
       window.variants && variants.init( [ 'relearn-light' ] );
       // translations
@@ -62,7 +78,15 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#create-security-group">Create Security Group</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -97,6 +121,71 @@
 
 <h1 id="14-security-group">1.4 Security Group</h1>
 
+<p>A security group controls the traffic that is allowed to reach and leave the resources that it is
+associated with. For example, after you associate a security group with an EC2 instance, it controls the
+inbound and outbound traffic for the instance.</p>
+<h3 id="create-security-group">Create Security Group</h3>
+<ol>
+<li>
+<p>At the <a href="https://console.aws.amazon.com/vpc/home" rel="external" target="_blank">VPC management console</a>:</p>
+<ul>
+<li>Click <em>Security groups</em>.</li>
+<li>Click <em>Create security group</em>.</li>
+</ul>
+<p><a href="#R-image-896c39970c515117aa3a428aa073ba9b" class="lightbox-link"><img alt="Security Group Console" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/1-vpc-in-aws/img-12.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-896c39970c515117aa3a428aa073ba9b"><img alt="Security Group Console" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/1-vpc-in-aws/img-12.png"></a></p>
+</li>
+<li>
+<p>At the <em>Create security group</em> page, enter the following information:</p>
+<ul>
+<li><strong>Name tag</strong>: <code>security-group-inference-1</code>.</li>
+<li><strong>Description</strong>: <code>Allow SSH to developers. Allow REST API and gRPC calls for inference.</code>.</li>
+<li><strong>VPC</strong>: Choose the VPC with tag <code>vpc-inference-1</code>.</li>
+<li>Click <em>Create security group</em>.</li>
+</ul>
+<p><a href="#R-image-e47e3e07f405a9f604a52100b03ad7ef" class="lightbox-link"><img alt="Create Security Group" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/1-vpc-in-aws/img-13.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e47e3e07f405a9f604a52100b03ad7ef"><img alt="Create Security Group" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/1-vpc-in-aws/img-13.png"></a></p>
+<p>You will need to create 3 inbound rules for this security group. EC2 instance needs to accept SSH
+connections from developers. Additionally, since you will serve the TensorFlow model with TensorFlow
+Serving with Docker, EC2 instance will need to accept REST API and gRPC calls at port 8501 and 8500
+respectively.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Protocol</th>
+<th>Port Range</th>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSH</td>
+<td>TCP</td>
+<td>22</td>
+<td>My IP</td>
+<td>SSH connection from developers</td>
+</tr>
+<tr>
+<td>Custom TCP</td>
+<td>TCP</td>
+<td>8501</td>
+<td>Anywhere-IPv4</td>
+<td>REST API calls</td>
+</tr>
+<tr>
+<td>Custom TCP</td>
+<td>TCP</td>
+<td>8500</td>
+<td>Anywhere-IPv4</td>
+<td>gRPC calls</td>
+</tr>
+</tbody>
+</table>
+<p>Leave the other fields as default and click <em>Create security group</em>.</p>
+</li>
+</ol>
 
             <footer class="footline">
             </footer>
@@ -124,12 +213,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1725965370" defer></script>
-        <script src="/js/lunr/lunr.min.js?1725965370" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1725965370" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1725965370" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1725965370" defer></script>
-        <script src="/js/search.js?1725965370" defer></script>
+        <script src="/js/auto-complete.js?1725984179" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725984179" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725984179" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725984179" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725984179" defer></script>
+        <script src="/js/search.js?1725984179" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -206,8 +295,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1725965370" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1725965370" defer></script>
-    <script src="/js/theme.js?1725965370" defer></script>
+    <script src="/js/clipboard.min.js?1725984179" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725984179" defer></script>
+    <script src="/js/theme.js?1725984179" defer></script>
   </body>
 </html>

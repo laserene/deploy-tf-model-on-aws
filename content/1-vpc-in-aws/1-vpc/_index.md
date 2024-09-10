@@ -10,23 +10,25 @@ All the AWS services in this lab will be initialized at the *Asia Pacific (Singa
 select this region before entering the lab.
 {{% /notice %}}
 
+A VPC is a virtual network that closely resembles a traditional network that you'd operate in your own data center.
+
 ### Create VPC
 1. Go to [VPC management console](https://console.aws.amazon.com/vpc/home).
-   - Click **Your VPCs**.
-   - Click **Create VPC**.
+   - Click *Your VPCs*.
+   - Click *Create VPC*.
    
    ![VPC Console](/images/1-vpc-in-aws/img-1.png)
 
-2. At the **Create VPC** page, enter the following information: 
+2. At the *Create VPC* page, enter the following information: 
    - Choose *VPC only*.
    - **Name tag**: `vpc-inference-1`.
    - **IPv4 CIDR block**: `10.10.0.0/28`.
-   - Click **Create VPC**.
+   - Click *Create VPC*.
    
    ![Create VPC](/images/1-vpc-in-aws/img-2.png)
 
 3. After a VPC has been successfully created, you should edit some VPC configurations.
-   - Click **Actions**.
-   - Click **Edit VPC Setting**.
+   - Click *Actions*.
+   - Click *Edit VPC Setting*.
 
    ![Edit VPC](/images/1-vpc-in-aws/img-3.png)

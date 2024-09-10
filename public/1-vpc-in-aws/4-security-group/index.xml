@@ -3,7 +3,7 @@
   <channel>
     <title>1.4 Security Group :: My New Hugo Site</title>
     <link>http://localhost:1313/1-vpc-in-aws/4-security-group/index.html</link>
-    <description></description>
+    <description>A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.&#xA;Create Security Group At the VPC management console:&#xA;Click Security groups. Click Create security group. At the Create security group page, enter the following information:&#xA;Name tag: security-group-inference-1. Description: Allow SSH to developers.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>

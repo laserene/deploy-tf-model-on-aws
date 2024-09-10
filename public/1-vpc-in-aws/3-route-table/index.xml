@@ -3,7 +3,7 @@
   <channel>
     <title>1.3 Route Table :: My New Hugo Site</title>
     <link>http://localhost:1313/1-vpc-in-aws/3-route-table/index.html</link>
-    <description></description>
+    <description>A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.&#xA;Create Route Table At the VPC management console:&#xA;Click Route tables. Click Create route table. At the Create route table page, enter the following information:&#xA;Name tag: route-table-inference-1. VPC: Choose the VPC with tag vpc-inference-1. Click Create route table. After the route table is created, you will need to associate it to the public subnet.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
