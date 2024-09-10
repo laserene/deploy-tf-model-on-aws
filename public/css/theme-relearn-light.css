@@ -1,5 +1,5 @@
 :root {
-    --PRIMARY-color: rgba( 125, 201, 3, 1 ); /* brand primary color */
+    --PRIMARY-color: rgba( 40, 62, 91, 1 ); /* brand primary color */
     --SECONDARY-color: rgba( 72, 106, 201, 1 ); /* brand secondary color */
     --ACCENT-color: rgb( 255, 102, 78 ); /* brand accent color, used for search highlights */
 
@@ -21,7 +21,7 @@
     --OPENAPI-theme: light; /* name of the default OpenAPI theme for this variant, can be overridden in hugo.toml */
     --OPENAPI-CODE-theme: idea; /* name of the default OpenAPI code theme for this variant, can be overridden in hugo.toml */
 
-    --MENU-HOME-LINK-color: rgba( 64, 64, 64, 1 ); /* home button color if configured */
+    --MENU-HOME-LINK-color: rgba( 186, 186, 186, 1 ); /* home button color if configured */
     --MENU-HOME-LINK-HOVER-color: rgba( 0, 0, 0, 1 ); /* hovered home button color if configured */
 
     --MENU-SEARCH-color: rgba( 224, 224, 224, 1 ); /* text and icon color of search box */
