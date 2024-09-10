@@ -6,11 +6,12 @@
     <description>This is a new home page.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 10 Sep 2024 15:19:23 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. VPC in AWS</title>
       <link>http://localhost:1313/1-vpc-in-aws/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Sep 2024 15:10:14 +0700</pubDate>
       <guid>http://localhost:1313/1-vpc-in-aws/index.html</guid>
       <description>This is a new chapter.</description>
     </item>
@@ -22,21 +23,21 @@
       <description>This is a new chapter.</description>
     </item>
     <item>
-      <title>3 Create Model Storage With S3</title>
+      <title>3. Create Model Storage with S3</title>
       <link>http://localhost:1313/3-create-model-storage-with-s3/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Sep 2024 15:19:23 +0700</pubDate>
       <guid>http://localhost:1313/3-create-model-storage-with-s3/index.html</guid>
       <description>This is a new chapter.</description>
     </item>
     <item>
-      <title>4 Build Server With Docker</title>
+      <title>4. Build Server with Docker</title>
       <link>http://localhost:1313/4-build-server-with-docker/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Sep 2024 15:12:23 +0700</pubDate>
       <guid>http://localhost:1313/4-build-server-with-docker/index.html</guid>
       <description>This is a new chapter.</description>
     </item>
     <item>
-      <title>5 Clean Up</title>
+      <title>5. Clean Up</title>
       <link>http://localhost:1313/5-clean-up/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/5-clean-up/index.html</guid>

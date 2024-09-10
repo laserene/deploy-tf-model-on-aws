@@ -5,22 +5,20 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
     <meta name="generator" content="Relearn 6.3.0+tip">
-    <meta name="description" content="This is a new chapter.">
+    <meta name="description" content="">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="2. Establish EC2 Server :: My New Hugo Site">
-    <meta name="twitter:description" content="This is a new chapter.">
-    <meta property="og:url" content="http://localhost:1313/2-establish-ec2-server/index.html">
+    <meta name="twitter:title" content="2. Serving with Docker :: My New Hugo Site">
+    <meta property="og:url" content="http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html">
     <meta property="og:site_name" content="My New Hugo Site">
-    <meta property="og:title" content="2. Establish EC2 Server :: My New Hugo Site">
-    <meta property="og:description" content="This is a new chapter.">
+    <meta property="og:title" content="2. Serving with Docker :: My New Hugo Site">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="2. Establish EC2 Server :: My New Hugo Site">
-    <meta itemprop="description" content="This is a new chapter.">
-    <meta itemprop="wordCount" content="5">
-    <title>2. Establish EC2 Server :: My New Hugo Site</title>
-    <link href="/2-establish-ec2-server/index.xml" rel="alternate" type="application/rss+xml" title="2. Establish EC2 Server :: My New Hugo Site">
+    <meta itemprop="name" content="2. Serving with Docker :: My New Hugo Site">
+    <meta itemprop="datePublished" content="2024-09-10T15:12:23+07:00">
+    <meta itemprop="dateModified" content="2024-09-10T15:12:23+07:00">
+    <title>2. Serving with Docker :: My New Hugo Site</title>
+    <link href="/4-build-server-with-docker/2-serving-with-docker/index.xml" rel="alternate" type="application/rss+xml" title="2. Serving with Docker :: My New Hugo Site">
     <link href="/css/fontawesome-all.min.css?1725956391" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725956391" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css?1725956391" rel="stylesheet">
     <link href="/css/auto-complete.css?1725956391" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725956391" rel="stylesheet"></noscript>
@@ -34,8 +32,8 @@
     <script src="/js/variant.js?1725956391"></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.relBasePath='..';
-      window.relearn.relBaseUri='..';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
@@ -52,7 +50,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/2-establish-ec2-server/index.html">
+  <body class="mobile-support html" data-url="/4-build-server-with-docker/2-serving-with-docker/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -69,12 +67,13 @@
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">2. Establish EC2 Server</span><meta itemprop="position" content="1"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/4-build-server-with-docker/index.html"><span itemprop="name">4. Build Server with Docker</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">2. Serving with Docker</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/1-vpc-in-aws/5-internet-gateway/index.html" title="5. Internet Gateway (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/4-build-server-with-docker/1-test-connection/index.html" title="1. Test Connection (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/3-create-model-storage-with-s3/index.html" title="3. Create Model Storage with S3 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/5-clean-up/index.html" title="5. Clean Up (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -88,16 +87,14 @@
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable chapter narrow" tabindex="-1">
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="chapter">
+          <article class="default">
             <header class="headline">
             </header>
-<div class="article-subheading">Chapter 2</div>
 
-<h1 id="2-establish-ec2-server">2. Establish EC2 Server</h1>
+<h1 id="2-serving-with-docker">2. Serving with Docker</h1>
 
-<p>This is a new chapter.</p>
 
             <footer class="footline">
             </footer>
@@ -195,13 +192,13 @@
           <li data-nav-id="/1-vpc-in-aws/3-route-table/index.html" class=""><a class="padding" href="/1-vpc-in-aws/3-route-table/index.html">3. Route Table</a></li>
           <li data-nav-id="/1-vpc-in-aws/4-security-group/index.html" class=""><a class="padding" href="/1-vpc-in-aws/4-security-group/index.html">4. Security Group</a></li>
           <li data-nav-id="/1-vpc-in-aws/5-internet-gateway/index.html" class=""><a class="padding" href="/1-vpc-in-aws/5-internet-gateway/index.html">5. Internet Gateway</a></li></ul></li>
-          <li data-nav-id="/2-establish-ec2-server/index.html" class="active"><a class="padding" href="/2-establish-ec2-server/index.html">2. Establish EC2 Server</a></li>
+          <li data-nav-id="/2-establish-ec2-server/index.html" class=""><a class="padding" href="/2-establish-ec2-server/index.html">2. Establish EC2 Server</a></li>
           <li data-nav-id="/3-create-model-storage-with-s3/index.html" class=""><a class="padding" href="/3-create-model-storage-with-s3/index.html">3. Create Model Storage with S3</a><ul id="R-subsections-214c53f726536456116fa11ee14a1b85" class="morespace collapsible-menu">
           <li data-nav-id="/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html" class=""><a class="padding" href="/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html">1. Create Gateway Endpoint</a></li>
           <li data-nav-id="/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html" class=""><a class="padding" href="/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html">2. Upload Model to S3</a></li></ul></li>
-          <li data-nav-id="/4-build-server-with-docker/index.html" class=""><a class="padding" href="/4-build-server-with-docker/index.html">4. Build Server with Docker</a><ul id="R-subsections-ba10ce003a3b0c64f8ebb17cee14b0d9" class="morespace collapsible-menu">
+          <li data-nav-id="/4-build-server-with-docker/index.html" class="parent "><a class="padding" href="/4-build-server-with-docker/index.html">4. Build Server with Docker</a><ul id="R-subsections-ba10ce003a3b0c64f8ebb17cee14b0d9" class="morespace collapsible-menu">
           <li data-nav-id="/4-build-server-with-docker/1-test-connection/index.html" class=""><a class="padding" href="/4-build-server-with-docker/1-test-connection/index.html">1. Test Connection</a></li>
-          <li data-nav-id="/4-build-server-with-docker/2-serving-with-docker/index.html" class=""><a class="padding" href="/4-build-server-with-docker/2-serving-with-docker/index.html">2. Serving with Docker</a></li></ul></li>
+          <li data-nav-id="/4-build-server-with-docker/2-serving-with-docker/index.html" class="active"><a class="padding" href="/4-build-server-with-docker/2-serving-with-docker/index.html">2. Serving with Docker</a></li></ul></li>
           <li data-nav-id="/5-clean-up/index.html" class=""><a class="padding" href="/5-clean-up/index.html">5. Clean Up</a></li>
           </ul>
         </div>
@@ -217,7 +214,7 @@
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/2-establish-ec2-server/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/4-build-server-with-docker/2-serving-with-docker/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>

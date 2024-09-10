@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html</loc>
+    <lastmod>2024-09-10T15:18:54+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</loc>
+    <lastmod>2024-09-10T15:12:10+07:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/1-vpc-in-aws/index.html</loc>
+    <lastmod>2024-09-10T15:10:14+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/1-vpc-in-aws/1-vpc/index.html</loc>
+    <lastmod>2024-09-10T15:09:31+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html</loc>
+    <lastmod>2024-09-10T15:19:23+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</loc>
+    <lastmod>2024-09-10T15:12:23+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/1-vpc-in-aws/2-subnet/index.html</loc>
+    <lastmod>2024-09-10T15:09:40+07:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/2-establish-ec2-server/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/3-create-model-storage-with-s3/index.html</loc>
+    <lastmod>2024-09-10T15:19:23+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/1-vpc-in-aws/3-route-table/index.html</loc>
+    <lastmod>2024-09-10T15:09:48+07:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/4-build-server-with-docker/index.html</loc>
+    <lastmod>2024-09-10T15:12:23+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/1-vpc-in-aws/4-security-group/index.html</loc>
+    <lastmod>2024-09-10T15:09:58+07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/1-vpc-in-aws/5-internet-gateway/index.html</loc>
+    <lastmod>2024-09-10T15:10:14+07:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/5-clean-up/index.html</loc>
