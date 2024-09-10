@@ -5,3 +5,6 @@ theme = 'hugo-theme-relearn'
 
 [params]
     themeVariant = 'relearn-light'
+
+[outputs]
+    home = ['html', 'rss', 'search']
