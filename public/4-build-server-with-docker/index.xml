@@ -3,7 +3,7 @@
   <channel>
     <title>4. Build Server with Docker :: My New Hugo Site</title>
     <link>http://localhost:1313/4-build-server-with-docker/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.&#xA;Note In this lab, we will use MobaXterm to establish the connection to EC2. You can use other SSH clients such as PuTTY or Terminal on Mac.&#xA;Content Test connection Serving with Docker</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Sep 2024 15:12:23 +0700</lastBuildDate>
@@ -13,14 +13,14 @@
       <link>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:12:10 +0700</pubDate>
       <guid>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</guid>
-      <description></description>
+      <description>Test Connection Go to EC2 console and select the instance you just created.&#xA;Copy the public IP address of the instance. Open MobaXterm, create a new SSH session:&#xA;Remote host: Paste the public IP address of the instance. Check Specify username and enter ec2-user. In the Advanced SSH settings tab, go to Use private key and select the .ppk file you downloaded when creating the instance.&#xA;Now you should be able to connect to the instance.</description>
     </item>
     <item>
       <title>4.2 Serving with Docker</title>
       <link>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:12:23 +0700</pubDate>
       <guid>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</guid>
-      <description></description>
+      <description>In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.&#xA;Install Docker on EC2 Run the following commands to install Docker on EC2.&#xA;Update the packages:&#xA;sudo yum update -y Install Docker:&#xA;sudo yum install docker -y Start the Docker service:&#xA;sudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.</description>
     </item>
   </channel>
 </rss>

@@ -81,8 +81,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
-    "content": "This is a new chapter.",
-    "description": "This is a new chapter.",
+    "content": "With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.\nNote In this lab, we will use MobaXterm to establish the connectio\nContent Test connection Serving with Docker",
+    "description": "With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.\nNote In this lab, we will use MobaXterm to establish the connectio\nContent Test connection Serving with Docker",
     "tags": [],
     "title": "4. Build Server with Docker",
     "uri": "/4-build-server-with-docker/index.html"

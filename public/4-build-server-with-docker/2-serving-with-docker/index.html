@@ -5,31 +5,55 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
     <meta name="generator" content="Relearn 6.3.0+tip">
-    <meta name="description" content="">
+    <meta name="description" content="In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.
+Install Docker on EC2 Run the following commands to install Docker on EC2.
+Update the packages:
+sudo yum update -y Install Docker:
+sudo yum install docker -y Start the Docker service:
+sudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="4.2 Serving with Docker :: My New Hugo Site">
+    <meta name="twitter:description" content="In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.
+Install Docker on EC2 Run the following commands to install Docker on EC2.
+Update the packages:
+sudo yum update -y Install Docker:
+sudo yum install docker -y Start the Docker service:
+sudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.">
     <meta property="og:url" content="http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html">
     <meta property="og:site_name" content="My New Hugo Site">
     <meta property="og:title" content="4.2 Serving with Docker :: My New Hugo Site">
+    <meta property="og:description" content="In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.
+Install Docker on EC2 Run the following commands to install Docker on EC2.
+Update the packages:
+sudo yum update -y Install Docker:
+sudo yum install docker -y Start the Docker service:
+sudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="4.2 Serving with Docker :: My New Hugo Site">
+    <meta itemprop="description" content="In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.
+Install Docker on EC2 Run the following commands to install Docker on EC2.
+Update the packages:
+sudo yum update -y Install Docker:
+sudo yum install docker -y Start the Docker service:
+sudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.">
     <meta itemprop="datePublished" content="2024-09-10T15:12:23+07:00">
     <meta itemprop="dateModified" content="2024-09-10T15:12:23+07:00">
+    <meta itemprop="wordCount" content="184">
     <title>4.2 Serving with Docker :: My New Hugo Site</title>
     <link href="/4-build-server-with-docker/2-serving-with-docker/index.xml" rel="alternate" type="application/rss+xml" title="4.2 Serving with Docker :: My New Hugo Site">
-    <link href="/css/fontawesome-all.min.css?1725989405" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725989405" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1725989405" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725989405" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725989405" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1725989405" rel="stylesheet">
-    <link href="/css/fonts.css?1725989405" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725989405" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1725989405" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1725989405" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-light.css?1725989405" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1725989405" rel="stylesheet">
-    <link href="/css/print.css?1725989405" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1725989405"></script>
+    <link href="/css/fontawesome-all.min.css?1725996139" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725996139" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725996139" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725996139" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725996139" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725996139" rel="stylesheet">
+    <link href="/css/fonts.css?1725996139" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725996139" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725996139" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1725996139" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-light.css?1725996139" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725996139" rel="stylesheet">
+    <link href="/css/print.css?1725996139" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725996139"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -37,7 +61,7 @@
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/index.search.js?1725989405";
+      window.index_js_url="/index.search.js?1725996139";
       // variant stuff
       window.variants && variants.init( [ 'relearn-light' ] );
       // translations
@@ -62,7 +86,16 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#install-docker-on-ec2">Install Docker on EC2</a></li>
+        <li><a href="#serving">Serving</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -97,6 +130,44 @@
 
 <h1 id="42-serving-with-docker">4.2 Serving with Docker</h1>
 
+<p>In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn&rsquo;t come
+with Docker pre-installed, you will need to install it manually.</p>
+<h3 id="install-docker-on-ec2">Install Docker on EC2</h3>
+<p>Run the following commands to install Docker on EC2.</p>
+<ol>
+<li>
+<p>Update the packages:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum update -y</span></span></code></pre></div>
+</li>
+<li>
+<p>Install Docker:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum install docker -y</span></span></code></pre></div>
+</li>
+<li>
+<p>Start the Docker service:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo service docker start</span></span></code></pre></div>
+</li>
+</ol>
+<h3 id="serving">Serving</h3>
+<p>Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.
+In this lab, since the TensorFlow version of <code>nmt</code> model is 2.17.0 and trained on CPU only, you will pull
+the TensorFlow Serving image with tag 2.17.0 that has no GPU-support.</p>
+<ol>
+<li>
+<p>Pull the TensorFlow Serving Docker image:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker pull tensorflow/serving:2.17.0</span></span></code></pre></div>
+<p>Additionally, since TensorFlow Serving no longer supports fetching files from Amazon S3, you will need to
+copy the model from S3 to the server.</p>
+</li>
+<li>
+<p>Run the following command to copy the model from S3 to the server.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws s3 sync s3://bucket-nlp-models-1/nmt .</span></span></code></pre></div>
+</li>
+<li>
+<p>Serve the model with Docker:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker run -p 8501:8501 -p 8500:8500 --name nmt --mount type<span style="color:#f92672">=</span>bind,source<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>/nmt,target<span style="color:#f92672">=</span>/models/nmt -e MODEL_NAME<span style="color:#f92672">=</span>nmt -t tensorflow/serving:2.17.0</span></span></code></pre></div>
+</li>
+</ol>
 
             <footer class="footline">
             </footer>
@@ -124,12 +195,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1725989405" defer></script>
-        <script src="/js/lunr/lunr.min.js?1725989405" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1725989405" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1725989405" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1725989405" defer></script>
-        <script src="/js/search.js?1725989405" defer></script>
+        <script src="/js/auto-complete.js?1725996139" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725996139" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725996139" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725996139" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725996139" defer></script>
+        <script src="/js/search.js?1725996139" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -206,8 +277,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1725989405" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1725989405" defer></script>
-    <script src="/js/theme.js?1725989405" defer></script>
+    <script src="/js/clipboard.min.js?1725996139" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725996139" defer></script>
+    <script src="/js/theme.js?1725996139" defer></script>
   </body>
 </html>

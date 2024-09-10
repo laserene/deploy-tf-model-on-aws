@@ -20,7 +20,7 @@
       <link>http://localhost:1313/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:19:23 +0700</pubDate>
       <guid>http://localhost:1313/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html</guid>
-      <description>Create S3 Bucket Go to S3 Console:&#xA;Click Bucket, then Create bucket. In the Create bucket tab:&#xA;Bucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.&#xA;Upload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.&#xA;Click Add folder, navigate to the model folder to S3 then click Upload.</description>
+      <description>Create S3 Bucket Go to S3 Console:&#xA;Click Bucket, then Create bucket. In the Create bucket tab:&#xA;Bucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.&#xA;Upload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.&#xA;Click Add folder, navigate to the folder nmt on local machine then click Upload.</description>
     </item>
   </channel>
 </rss>
