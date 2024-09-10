@@ -23,7 +23,7 @@ weight = 2
 
    ![Upload Model](/images/3-create-model-storage-with-s3/img-6.png)
 
-   - Click *Add folder*, navigate to the model folder to S3 then click *Upload*.
+   - Click *Add folder*, navigate to the folder [nmt]() on local machine then click *Upload*.
 
    ![Upload Model](/images/3-create-model-storage-with-s3/img-7.png)
 
