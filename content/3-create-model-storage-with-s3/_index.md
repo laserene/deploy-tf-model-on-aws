@@ -11,3 +11,5 @@ In this lab, you will use Amazon S3 to store current model files as well as any 
 future.
 
 ### Content
+1. [Create Gateway Endpoint](1-create-gateway-endpoint)
+2. [Upload model to S3](2-upload-model-to-s3)
