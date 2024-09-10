@@ -3,7 +3,7 @@
   <channel>
     <title>3. Create Model Storage with S3 :: My New Hugo Site</title>
     <link>http://localhost:1313/3-create-model-storage-with-s3/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance at highest durability for a variety of use cases.&#xA;In this lab, you will use Amazon S3 to store current model files as well as any other versions in the future.&#xA;Content</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Sep 2024 15:19:23 +0700</lastBuildDate>

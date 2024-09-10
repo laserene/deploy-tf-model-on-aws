@@ -3,7 +3,7 @@
   <channel>
     <title>2. Establish EC2 Server :: My New Hugo Site</title>
     <link>http://localhost:1313/2-establish-ec2-server/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Create EC2 Instance Go to EC2 Console and click “Instances”:&#xA;Click “Launch Instance” to create a new instance. In the Launch an instance tab:&#xA;Name tag: Inference Server AMI: Amazon Linux 2023 AMI Instance Type: t2.micro In the key pair section, create a new key pair named key-pair-inference-1 of type RSA in .ppk format and download it. This key pair will be used to connect to the instance.&#xA;In the Network settings section, select the Edit button.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/2-establish-ec2-server/index.xml" rel="self" type="application/rss+xml" />
