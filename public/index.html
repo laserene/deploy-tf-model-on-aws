@@ -5,35 +5,39 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.131.0">
     <meta name="generator" content="Relearn 6.3.0+tip">
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="This is a new home page.">
+    <meta name="description" content="Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.
+Content VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="My New Hugo Site">
-    <meta name="twitter:description" content="This is a new home page.">
+    <meta name="twitter:title" content="Deploy TensorFlow Model on AWS with EC2 and Docker :: My New Hugo Site">
+    <meta name="twitter:description" content="Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.
+Content VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up">
     <meta property="og:url" content="http://localhost:1313/index.html">
     <meta property="og:site_name" content="My New Hugo Site">
-    <meta property="og:title" content="My New Hugo Site">
-    <meta property="og:description" content="This is a new home page.">
+    <meta property="og:title" content="Deploy TensorFlow Model on AWS with EC2 and Docker :: My New Hugo Site">
+    <meta property="og:description" content="Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.
+Content VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="My New Hugo Site">
-    <meta itemprop="description" content="This is a new home page.">
+    <meta itemprop="name" content="Deploy TensorFlow Model on AWS with EC2 and Docker :: My New Hugo Site">
+    <meta itemprop="description" content="Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.
+Content VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up">
     <meta itemprop="datePublished" content="2024-09-10T15:19:23+07:00">
     <meta itemprop="dateModified" content="2024-09-10T15:19:23+07:00">
-    <meta itemprop="wordCount" content="6">
-    <title>My New Hugo Site</title>
-    <link href="/css/fontawesome-all.min.css?1725961896" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725961896" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1725961896" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725961896" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725961896" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1725961896" rel="stylesheet">
-    <link href="/css/fonts.css?1725961896" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725961896" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1725961896" rel="stylesheet">
-    <link href="/css/theme-relearn-light.css?1725961896" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-light.css?1725961896" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1725961896" rel="stylesheet">
-    <link href="/css/print.css?1725961896" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1725961896"></script>
+    <meta itemprop="wordCount" content="41">
+    <title>Deploy TensorFlow Model on AWS with EC2 and Docker :: My New Hugo Site</title>
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Deploy TensorFlow Model on AWS with EC2 and Docker :: My New Hugo Site">
+    <link href="/css/fontawesome-all.min.css?1725965233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725965233" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725965233" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725965233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725965233" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725965233" rel="stylesheet">
+    <link href="/css/fonts.css?1725965233" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725965233" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725965233" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1725965233" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-light.css?1725965233" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725965233" rel="stylesheet">
+    <link href="/css/print.css?1725965233" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725965233"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='.';
@@ -41,7 +45,7 @@
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/index.search.js?1725961896";
+      window.index_js_url="/index.search.js?1725965233";
       // variant stuff
       window.variants && variants.init( [ 'relearn-light' ] );
       // translations
@@ -66,12 +70,22 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#overall">Overall</a></li>
+        <li><a href="#content">Content</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Deploy TensorFlow Model on AWS with EC2 and Docker</span><meta itemprop="position" content="1"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-left"></i></span>
@@ -96,9 +110,21 @@
             <header class="headline">
             </header>
 
-<h1 id="my-new-hugo-site">My New Hugo Site</h1>
+<h1 id="deploy-tensorflow-model-on-aws-with-ec2-and-docker">Deploy TensorFlow Model on AWS with EC2 and Docker</h1>
 
-<p>This is a new home page.</p>
+<h3 id="overall">Overall</h3>
+<p>In this lab, you&rsquo;ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc.
+and Docker.</p>
+<p><a href="#R-image-6cea15a8767daceb583d87ace0df7b83" class="lightbox-link"><img alt="Application Architecture" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/machine_translation_sys.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6cea15a8767daceb583d87ace0df7b83"><img alt="Application Architecture" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/machine_translation_sys.png"></a></p>
+<h3 id="content">Content</h3>
+<ol>
+<li><a href="/1-vpc-in-aws/index.html">VPC in AWS</a></li>
+<li><a href="/2-establish-ec2-server/index.html">Establish EC2 Server</a></li>
+<li><a href="/3-create-model-storage-with-s3/index.html">Create Model Storage with S3</a></li>
+<li><a href="/4-build-server-with-docker/index.html">Build Server with Docker</a></li>
+<li><a href="/5-clean-up/index.html">Clean up</a></li>
+</ol>
 
             <footer class="footline">
             </footer>
@@ -126,12 +152,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1725961896" defer></script>
-        <script src="/js/lunr/lunr.min.js?1725961896" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1725961896" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1725961896" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1725961896" defer></script>
-        <script src="/js/search.js?1725961896" defer></script>
+        <script src="/js/auto-complete.js?1725965233" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725965233" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725965233" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725965233" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725965233" defer></script>
+        <script src="/js/search.js?1725965233" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -208,8 +234,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1725961896" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1725961896" defer></script>
-    <script src="/js/theme.js?1725961896" defer></script>
+    <script src="/js/clipboard.min.js?1725965233" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725965233" defer></script>
+    <script src="/js/theme.js?1725965233" defer></script>
   </body>
 </html>

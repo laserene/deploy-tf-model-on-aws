@@ -1,6 +1,6 @@
 var relearn_search_index = [
   {
-    "breadcrumb": "3. Create Model Storage with S3",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 3. Create Model Storage with S3",
     "content": "",
     "description": "",
     "tags": [],
@@ -8,7 +8,7 @@ var relearn_search_index = [
     "uri": "/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html"
   },
   {
-    "breadcrumb": "4. Build Server with Docker",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
     "content": "",
     "description": "",
     "tags": [],
@@ -16,15 +16,15 @@ var relearn_search_index = [
     "uri": "/4-build-server-with-docker/1-test-connection/index.html"
   },
   {
-    "breadcrumb": "",
-    "content": "This is a new chapter.",
-    "description": "This is a new chapter.",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
+    "content": "Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent VPC Subnet Route Table Security Group Internet Gateway",
+    "description": "Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent VPC Subnet Route Table Security Group Internet Gateway",
     "tags": [],
     "title": "1. VPC in AWS",
     "uri": "/1-vpc-in-aws/index.html"
   },
   {
-    "breadcrumb": "1. VPC in AWS",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
@@ -32,7 +32,7 @@ var relearn_search_index = [
     "uri": "/1-vpc-in-aws/1-vpc/index.html"
   },
   {
-    "breadcrumb": "3. Create Model Storage with S3",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 3. Create Model Storage with S3",
     "content": "",
     "description": "",
     "tags": [],
@@ -40,7 +40,7 @@ var relearn_search_index = [
     "uri": "/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html"
   },
   {
-    "breadcrumb": "4. Build Server with Docker",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
     "content": "",
     "description": "",
     "tags": [],
@@ -48,7 +48,7 @@ var relearn_search_index = [
     "uri": "/4-build-server-with-docker/2-serving-with-docker/index.html"
   },
   {
-    "breadcrumb": "1. VPC in AWS",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
@@ -56,7 +56,7 @@ var relearn_search_index = [
     "uri": "/1-vpc-in-aws/2-subnet/index.html"
   },
   {
-    "breadcrumb": "",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
     "content": "This is a new chapter.",
     "description": "This is a new chapter.",
     "tags": [],
@@ -64,7 +64,7 @@ var relearn_search_index = [
     "uri": "/2-establish-ec2-server/index.html"
   },
   {
-    "breadcrumb": "",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
     "content": "This is a new chapter.",
     "description": "This is a new chapter.",
     "tags": [],
@@ -72,7 +72,7 @@ var relearn_search_index = [
     "uri": "/3-create-model-storage-with-s3/index.html"
   },
   {
-    "breadcrumb": "1. VPC in AWS",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
@@ -80,7 +80,7 @@ var relearn_search_index = [
     "uri": "/1-vpc-in-aws/3-route-table/index.html"
   },
   {
-    "breadcrumb": "",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
     "content": "This is a new chapter.",
     "description": "This is a new chapter.",
     "tags": [],
@@ -88,7 +88,7 @@ var relearn_search_index = [
     "uri": "/4-build-server-with-docker/index.html"
   },
   {
-    "breadcrumb": "1. VPC in AWS",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
@@ -96,7 +96,7 @@ var relearn_search_index = [
     "uri": "/1-vpc-in-aws/4-security-group/index.html"
   },
   {
-    "breadcrumb": "1. VPC in AWS",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
     "content": "",
     "description": "",
     "tags": [],
@@ -104,7 +104,7 @@ var relearn_search_index = [
     "uri": "/1-vpc-in-aws/5-internet-gateway/index.html"
   },
   {
-    "breadcrumb": "",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
     "content": "This is a new chapter.",
     "description": "This is a new chapter.",
     "tags": [],
@@ -113,6 +113,14 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
+    "content": "Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.\nContent VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up",
+    "description": "Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.\nContent VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up",
+    "tags": [],
+    "title": "Deploy TensorFlow Model on AWS with EC2 and Docker",
+    "uri": "/index.html"
+  },
+  {
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
     "content": "",
     "description": "",
     "tags": [],
@@ -120,7 +128,7 @@ var relearn_search_index = [
     "uri": "/categories/index.html"
   },
   {
-    "breadcrumb": "",
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
     "content": "",
     "description": "",
     "tags": [],

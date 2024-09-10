@@ -3,7 +3,7 @@
   <channel>
     <title>1. VPC in AWS :: My New Hugo Site</title>
     <link>http://localhost:1313/1-vpc-in-aws/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Overall In this lab, you’ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.&#xA;Content VPC Subnet Route Table Security Group Internet Gateway</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Sep 2024 15:10:14 +0700</lastBuildDate>
