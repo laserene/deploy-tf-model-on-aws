@@ -25,8 +25,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
-    "content": "Create VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.\nClick Actions. Click Edit VPC Setting.",
-    "description": "Create VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.\nClick Actions. Click Edit VPC Setting.",
+    "content": "Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.\nCreate VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.\nClick Actions. Click Edit VPC Setting.",
+    "description": "Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.\nCreate VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.",
     "tags": [],
     "title": "1.1 VPC",
     "uri": "/1-vpc-in-aws/1-vpc/index.html"
@@ -49,8 +49,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
-    "content": "",
-    "description": "",
+    "content": "Info Since there is currently no need for a database or other services, you will only create public subnet.\nCreate Public Subnet At the VPC management console:\nClick Subnets. Click Create subnet. At the Create subnet page, enter the following information:\nVPC: Choose the VPC with tag vpc-inference-1. Name tag: subnet-inference-1. Availability Zone: ap-southeast-1a. IPv4 subnet CIDR block: 10.0.0.0/28. Click Create subnet. After the subnet is created, the console will look like this. Since public subnet can access to the Internet, you will need to assign it a public IP address.\nClick Actions. Click Edit subnet settings.",
+    "description": "Info Since there is currently no need for a database or other services, you will only create public subnet.\nCreate Public Subnet At the VPC management console:\nClick Subnets. Click Create subnet. At the Create subnet page, enter the following information:\nVPC: Choose the VPC with tag vpc-inference-1. Name tag: subnet-inference-1. Availability Zone: ap-southeast-1a. IPv4 subnet CIDR block: 10.0.0.0/28. Click Create subnet. After the subnet is created, the console will look like this.",
     "tags": [],
     "title": "1.2 Subnet",
     "uri": "/1-vpc-in-aws/2-subnet/index.html"

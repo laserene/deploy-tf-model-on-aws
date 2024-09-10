@@ -3,7 +3,7 @@
   <channel>
     <title>1.2 Subnet :: My New Hugo Site</title>
     <link>http://localhost:1313/1-vpc-in-aws/2-subnet/index.html</link>
-    <description></description>
+    <description>Info Since there is currently no need for a database or other services, you will only create public subnet.&#xA;Create Public Subnet At the VPC management console:&#xA;Click Subnets. Click Create subnet. At the Create subnet page, enter the following information:&#xA;VPC: Choose the VPC with tag vpc-inference-1. Name tag: subnet-inference-1. Availability Zone: ap-southeast-1a. IPv4 subnet CIDR block: 10.0.0.0/28. Click Create subnet. After the subnet is created, the console will look like this.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
