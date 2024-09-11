@@ -26,9 +26,3 @@ A VPC is a virtual network that closely resembles a traditional network that you
    - Click *Create VPC*.
    
    ![Create VPC](/images/1-vpc-in-aws/img-2.png)
-
-3. After a VPC has been successfully created, you should edit some VPC configurations.
-   - Click *Actions*.
-   - Click *Edit VPC Setting*.
-
-   ![Edit VPC](/images/1-vpc-in-aws/img-3.png)
