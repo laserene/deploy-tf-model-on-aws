@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1.4 Security Group :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
-    <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.html</link>
+    <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.html</link>
     <description>A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.&#xA;Create Security Group At the VPC management console:&#xA;Click Security groups. Click Create security group. At the Create security group page, enter the following information:&#xA;Name tag: security-group-inference-1. Description: Allow SSH to developers.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

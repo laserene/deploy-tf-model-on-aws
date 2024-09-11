@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deploy TensorFlow Model on AWS with EC2 and Docker :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
-    <link>http://localhost:1313/DeployModelOnAWS/index.html</link>
+    <link>https://la-serene.github.io/DeployModelOnAWS/index.html</link>
     <description>Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.&#xA;Content VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Sep 2024 02:24:51 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/DeployModelOnAWS/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://la-serene.github.io/DeployModelOnAWS/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. VPC in AWS</title>
-      <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/index.html</link>
+      <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:10:14 +0700</pubDate>
-      <guid>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/index.html</guid>
+      <guid>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/index.html</guid>
       <description>In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.&#xA;Content VPC Subnet Route Table Security Group Internet Gateway</description>
     </item>
     <item>
       <title>2. Establish EC2 Server</title>
-      <link>http://localhost:1313/DeployModelOnAWS/2-establish-ec2-server/index.html</link>
+      <link>https://la-serene.github.io/DeployModelOnAWS/2-establish-ec2-server/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/DeployModelOnAWS/2-establish-ec2-server/index.html</guid>
+      <guid>https://la-serene.github.io/DeployModelOnAWS/2-establish-ec2-server/index.html</guid>
       <description>Create EC2 Instance Go to EC2 Console and click “Instances”:&#xA;Click “Launch Instance” to create a new instance. In the Launch an instance tab:&#xA;Name tag: Inference Server AMI: Amazon Linux 2023 AMI Instance Type: t2.micro In the key pair section, create a new key pair named key-pair-inference-1 of type RSA in .ppk format and download it. This key pair will be used to connect to the instance.&#xA;In the Network settings section, select the Edit button.</description>
     </item>
     <item>
       <title>3. Create Model Storage with S3</title>
-      <link>http://localhost:1313/DeployModelOnAWS/3-create-model-storage-with-s3/index.html</link>
+      <link>https://la-serene.github.io/DeployModelOnAWS/3-create-model-storage-with-s3/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:19:23 +0700</pubDate>
-      <guid>http://localhost:1313/DeployModelOnAWS/3-create-model-storage-with-s3/index.html</guid>
+      <guid>https://la-serene.github.io/DeployModelOnAWS/3-create-model-storage-with-s3/index.html</guid>
       <description>Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance at highest durability for a variety of use cases.&#xA;In this lab, you will use Amazon S3 to store current model files as well as any other versions in the future.&#xA;Content Create Gateway Endpoint Upload model to S3</description>
     </item>
     <item>
       <title>4. Build Server with Docker</title>
-      <link>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/index.html</link>
+      <link>https://la-serene.github.io/DeployModelOnAWS/4-build-server-with-docker/index.html</link>
       <pubDate>Wed, 11 Sep 2024 02:24:51 +0700</pubDate>
-      <guid>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/index.html</guid>
+      <guid>https://la-serene.github.io/DeployModelOnAWS/4-build-server-with-docker/index.html</guid>
       <description>With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.&#xA;Note In this lab, we will use MobaXterm to establish the connection to EC2. You can use other SSH clients such as PuTTY or Terminal on Mac.&#xA;Content Test connection Serving with Docker Making Inference</description>
     </item>
     <item>
       <title>5. Clean Up</title>
-      <link>http://localhost:1313/DeployModelOnAWS/5-clean-up/index.html</link>
+      <link>https://la-serene.github.io/DeployModelOnAWS/5-clean-up/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/DeployModelOnAWS/5-clean-up/index.html</guid>
+      <guid>https://la-serene.github.io/DeployModelOnAWS/5-clean-up/index.html</guid>
       <description>Clean up resources We will proceed to delete the resources in the following order:&#xA;Terminate the EC2 instance Access the EC2 dashboard.&#xA;Select Instances from the left navigation bar. Select the instance with the name tag Inference Server. Select Instance State. Select Terminate Instance. Confirm the termination&#xA;Select Terminate (delete). Delete the Public Subnet Go to the VPC dashboard.&#xA;Select Subnets from the left navigation bar. Select the subnet with the name tag subnet-inference-1.</description>
     </item>
   </channel>
