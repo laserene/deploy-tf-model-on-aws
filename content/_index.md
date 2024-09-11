@@ -8,7 +8,7 @@ title = "Deploy TensorFlow Model on AWS with EC2 and Docker"
 In this lab, you'll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. 
 and Docker.
 
-![Application Architecture](/static/images/machine_translation_sys.png)
+![Application Architecture](/images/machine_translation_sys.png)
 
 ### Content
 1. [VPC in AWS](1-vpc-in-aws)
