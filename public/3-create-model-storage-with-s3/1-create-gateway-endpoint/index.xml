@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3.1 Create Gateway Endpoint :: My New Hugo Site</title>
-    <link>http://localhost:1313/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html</link>
+    <title>3.1 Create Gateway Endpoint :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html</link>
     <description>Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.&#xA;Besides gateway endpoint, S3 and DynamoDB also support interface endpoint.&#xA;In this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.&#xA;Create IAM Role for reading files from S3 Go to IAM Console:&#xA;Click Roles, then Create role.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

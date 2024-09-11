@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>4.2 Serving with Docker :: My New Hugo Site</title>
-    <link>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</link>
+    <title>4.2 Serving with Docker :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/2-serving-with-docker/index.html</link>
     <description>In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.&#xA;Install Docker on EC2 Run the following commands to install Docker on EC2.&#xA;Update the packages:&#xA;sudo yum update -y Install Docker:&#xA;sudo yum install docker -y Start the Docker service:&#xA;sudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/2-serving-with-docker/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

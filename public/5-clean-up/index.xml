@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>5. Clean Up :: My New Hugo Site</title>
-    <link>http://localhost:1313/5-clean-up/index.html</link>
+    <title>5. Clean Up :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/5-clean-up/index.html</link>
     <description>Clean up resources We will proceed to delete the resources in the following order:&#xA;Terminate the EC2 instance Access the EC2 dashboard.&#xA;Select Instances from the left navigation bar. Select the instance with the name tag Inference Server. Select Instance State. Select Terminate Instance. Confirm the termination&#xA;Select Terminate (delete). Delete the Public Subnet Go to the VPC dashboard.&#xA;Select Subnets from the left navigation bar. Select the subnet with the name tag subnet-inference-1.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/5-clean-up/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/5-clean-up/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

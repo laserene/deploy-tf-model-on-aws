@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>4.1 Test Connection :: My New Hugo Site</title>
-    <link>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</link>
+    <title>4.1 Test Connection :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/1-test-connection/index.html</link>
     <description>Test Connection Go to EC2 console and select the instance you just created.&#xA;Copy the public IP address of the instance. Open MobaXterm, create a new SSH session:&#xA;Remote host: Paste the public IP address of the instance. Check Specify username and enter ec2-user. In the Advanced SSH settings tab, go to Use private key and select the .ppk file you downloaded when creating the instance.&#xA;Now you should be able to connect to the instance.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/4-build-server-with-docker/1-test-connection/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/1-test-connection/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

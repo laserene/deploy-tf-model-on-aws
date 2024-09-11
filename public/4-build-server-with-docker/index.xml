@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>4. Build Server with Docker :: My New Hugo Site</title>
-    <link>http://localhost:1313/4-build-server-with-docker/index.html</link>
+    <title>4. Build Server with Docker :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/index.html</link>
     <description>With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.&#xA;Note In this lab, we will use MobaXterm to establish the connection to EC2. You can use other SSH clients such as PuTTY or Terminal on Mac.&#xA;Content Test connection Serving with Docker Making Inference</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Sep 2024 02:24:51 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/4-build-server-with-docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>4.1 Test Connection</title>
-      <link>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/1-test-connection/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:12:10 +0700</pubDate>
-      <guid>http://localhost:1313/4-build-server-with-docker/1-test-connection/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/1-test-connection/index.html</guid>
       <description>Test Connection Go to EC2 console and select the instance you just created.&#xA;Copy the public IP address of the instance. Open MobaXterm, create a new SSH session:&#xA;Remote host: Paste the public IP address of the instance. Check Specify username and enter ec2-user. In the Advanced SSH settings tab, go to Use private key and select the .ppk file you downloaded when creating the instance.&#xA;Now you should be able to connect to the instance.</description>
     </item>
     <item>
       <title>4.2 Serving with Docker</title>
-      <link>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/2-serving-with-docker/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:12:23 +0700</pubDate>
-      <guid>http://localhost:1313/4-build-server-with-docker/2-serving-with-docker/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/2-serving-with-docker/index.html</guid>
       <description>In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.&#xA;Install Docker on EC2 Run the following commands to install Docker on EC2.&#xA;Update the packages:&#xA;sudo yum update -y Install Docker:&#xA;sudo yum install docker -y Start the Docker service:&#xA;sudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.</description>
     </item>
     <item>
       <title>4.3 Making Inference</title>
-      <link>http://localhost:1313/4-build-server-with-docker/3-making-inference/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/3-making-inference/index.html</link>
       <pubDate>Wed, 11 Sep 2024 02:24:51 +0700</pubDate>
-      <guid>http://localhost:1313/4-build-server-with-docker/3-making-inference/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/4-build-server-with-docker/3-making-inference/index.html</guid>
       <description>In this section, we will make inference using the model we have trained in the previous section. We will use the requests library in Python to make a POST request to the server.&#xA;REST API import requests # The API endpoint url = &#34;http://18.141.178.173:8501/v1/models/nmt:predict&#34; # Data to be sent data = { &#34;inputs&#34;: { &#34;inputs&#34;: [&#34;Hello, how are you?&#34;], &#34;maxlen&#34;: 30, &#34;temperature&#34;: 0.9 } } # A POST request to the API response = requests.</description>
     </item>
   </channel>

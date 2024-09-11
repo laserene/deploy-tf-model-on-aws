@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2. Establish EC2 Server :: My New Hugo Site</title>
-    <link>http://localhost:1313/2-establish-ec2-server/index.html</link>
+    <title>2. Establish EC2 Server :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/2-establish-ec2-server/index.html</link>
     <description>Create EC2 Instance Go to EC2 Console and click “Instances”:&#xA;Click “Launch Instance” to create a new instance. In the Launch an instance tab:&#xA;Name tag: Inference Server AMI: Amazon Linux 2023 AMI Instance Type: t2.micro In the key pair section, create a new key pair named key-pair-inference-1 of type RSA in .ppk format and download it. This key pair will be used to connect to the instance.&#xA;In the Network settings section, select the Edit button.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/2-establish-ec2-server/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/2-establish-ec2-server/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1.5 Internet Gateway :: My New Hugo Site</title>
-    <link>http://localhost:1313/1-vpc-in-aws/5-internet-gateway/index.html</link>
+    <title>1.5 Internet Gateway :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/5-internet-gateway/index.html</link>
     <description>An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet. It supports IPv4 and IPv6 traffic. It does not cause availability risks or bandwidth constraints on your network traffic.&#xA;Create Internet Gateway At the VPC management console:&#xA;Click Internet gateways. Click Create route table. At the Create internet gateway page, enter the following information:&#xA;Name tag: internet-gateway-inference-1. Click Create internet gateway.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/1-vpc-in-aws/5-internet-gateway/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/5-internet-gateway/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

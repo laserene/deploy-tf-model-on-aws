@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1.2 Subnet :: My New Hugo Site</title>
-    <link>http://localhost:1313/1-vpc-in-aws/2-subnet/index.html</link>
+    <title>1.2 Subnet :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
+    <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/2-subnet/index.html</link>
     <description>Info Since there is currently no need for a database or other services, you will only create public subnet.&#xA;A subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After creating a VPC, you can add EC2 instance(s) to the subnet.&#xA;Create Public Subnet At the VPC management console:&#xA;Click Subnets. Click Create subnet. At the Create subnet page, enter the following information:</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/1-vpc-in-aws/2-subnet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/2-subnet/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
