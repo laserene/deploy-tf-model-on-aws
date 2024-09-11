@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>http://localhost:1313/4-build-server-with-docker/index.html</loc>
-    <lastmod>2024-09-10T15:12:23+07:00</lastmod>
+    <lastmod>2024-09-11T02:24:51+07:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/1-vpc-in-aws/4-security-group/index.html</loc>
@@ -55,8 +55,12 @@
     <loc>http://localhost:1313/5-clean-up/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/4-build-server-with-docker/3-making-inference/index.html</loc>
+    <lastmod>2024-09-11T02:24:51+07:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/index.html</loc>
-    <lastmod>2024-09-10T15:19:23+07:00</lastmod>
+    <lastmod>2024-09-11T02:24:51+07:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>

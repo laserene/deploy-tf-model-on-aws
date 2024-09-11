@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.3 Making Inference :: My New Hugo Site</title>
+    <link>http://localhost:1313/4-build-server-with-docker/3-making-inference/index.html</link>
+    <description>In this section, we will make inference using the model we have trained in the previous section. We will use the requests library in Python to make a POST request to the server.&#xA;REST API import requests # The API endpoint url = &#34;http://18.141.178.173:8501/v1/models/nmt:predict&#34; # Data to be sent data = { &#34;inputs&#34;: { &#34;inputs&#34;: [&#34;Hello, how are you?&#34;], &#34;maxlen&#34;: 30, &#34;temperature&#34;: 0.9 } } # A POST request to the API response = requests.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/4-build-server-with-docker/3-making-inference/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

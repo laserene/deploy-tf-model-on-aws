@@ -9,8 +9,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
-    "content": "",
-    "description": "",
+    "content": "Test Connection Go to EC2 console and select the instance you just created.\nCopy the public IP address of the instance. Open MobaXterm, create a new SSH session:\nRemote host: Paste the public IP address of the instance. Check Specify username and enter ec2-user. In the Advanced SSH settings tab, go to Use private key and select the .ppk file you downloaded when creating the instance.\nNow you should be able to connect to the instance. Run the following command to check the current bucket in Amazon S3.\naws s3 ls",
+    "description": "Test Connection Go to EC2 console and select the instance you just created.\nCopy the public IP address of the instance. Open MobaXterm, create a new SSH session:\nRemote host: Paste the public IP address of the instance. Check Specify username and enter ec2-user. In the Advanced SSH settings tab, go to Use private key and select the .ppk file you downloaded when creating the instance.\nNow you should be able to connect to the instance.",
     "tags": [],
     "title": "4.1 Test Connection",
     "uri": "/4-build-server-with-docker/1-test-connection/index.html"
@@ -25,7 +25,7 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
-    "content": "Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.\nA VPC is a virtual network that closely resembles a traditional network that you’d operate in your own data center.\nCreate VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC. After a VPC has been successfully created, you should edit some VPC configurations.\nClick Actions. Click Edit VPC Setting.",
+    "content": "Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.\nA VPC is a virtual network that closely resembles a traditional network that you’d operate in your own data center.\nCreate VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:\nChoose VPC only. Name tag: vpc-inference-1. IPv4 CIDR block: 10.10.0.0/28. Click Create VPC.",
     "description": "Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.\nA VPC is a virtual network that closely resembles a traditional network that you’d operate in your own data center.\nCreate VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:",
     "tags": [],
     "title": "1.1 VPC",
@@ -33,16 +33,16 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 3. Create Model Storage with S3",
-    "content": "Create S3 Bucket Go to S3 Console:\nClick Bucket, then Create bucket. In the Create bucket tab:\nBucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.\nUpload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.\nClick Add folder, navigate to the model folder to S3 then click Upload.",
-    "description": "Create S3 Bucket Go to S3 Console:\nClick Bucket, then Create bucket. In the Create bucket tab:\nBucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.\nUpload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.\nClick Add folder, navigate to the model folder to S3 then click Upload.",
+    "content": "Create S3 Bucket Go to S3 Console:\nClick Bucket, then Create bucket. In the Create bucket tab:\nBucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.\nUpload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.\nClick Add folder, navigate to the folder nmt on local machine then click Upload.",
+    "description": "Create S3 Bucket Go to S3 Console:\nClick Bucket, then Create bucket. In the Create bucket tab:\nBucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.\nUpload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.\nClick Add folder, navigate to the folder nmt on local machine then click Upload.",
     "tags": [],
     "title": "3.2 Upload Model to S3",
     "uri": "/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
-    "content": "",
-    "description": "",
+    "content": "In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.\nInstall Docker on EC2 Run the following commands to install Docker on EC2.\nUpdate the packages:\nsudo yum update -y Install Docker:\nsudo yum install docker -y Start the Docker service:\nsudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image. In this lab, since the TensorFlow version of nmt model is 2.17.0 and trained on CPU only, you will pull the TensorFlow Serving image with tag 2.17.0 that has no GPU-support.\nPull the TensorFlow Serving Docker image:\nsudo docker pull tensorflow/serving:2.17.0 Additionally, since TensorFlow Serving no longer supports fetching files from Amazon S3, you will need to copy the model from S3 to the server.\nRun the following command to copy the model from S3 to the server.\naws s3 sync s3://bucket-nlp-models-1/nmt . Serve the model with Docker:\nsudo docker run -p 8501:8501 -p 8500:8500 --name nmt --mount type=bind,source=$(pwd)/nmt,target=/models/nmt -e MODEL_NAME=nmt -t tensorflow/serving:2.17.0",
+    "description": "In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.\nInstall Docker on EC2 Run the following commands to install Docker on EC2.\nUpdate the packages:\nsudo yum update -y Install Docker:\nsudo yum install docker -y Start the Docker service:\nsudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.",
     "tags": [],
     "title": "4.2 Serving with Docker",
     "uri": "/4-build-server-with-docker/2-serving-with-docker/index.html"
@@ -81,8 +81,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
-    "content": "With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.\nNote In this lab, we will use MobaXterm to establish the connectio\nContent Test connection Serving with Docker",
-    "description": "With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.\nNote In this lab, we will use MobaXterm to establish the connectio\nContent Test connection Serving with Docker",
+    "content": "With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.\nNote In this lab, we will use MobaXterm to establish the connection to EC2. You can use other SSH clients such as PuTTY or Terminal on Mac.\nContent Test connection Serving with Docker Making Inference",
+    "description": "With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.\nNote In this lab, we will use MobaXterm to establish the connection to EC2. You can use other SSH clients such as PuTTY or Terminal on Mac.\nContent Test connection Serving with Docker Making Inference",
     "tags": [],
     "title": "4. Build Server with Docker",
     "uri": "/4-build-server-with-docker/index.html"
@@ -105,11 +105,19 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
-    "content": "This is a new chapter.",
-    "description": "This is a new chapter.",
+    "content": "Clean up resources We will proceed to delete the resources in the following order:\nTerminate the EC2 instance Access the EC2 dashboard.\nSelect Instances from the left navigation bar. Select the instance with the name tag Inference Server. Select Instance State. Select Terminate Instance. Confirm the termination\nSelect Terminate (delete). Delete the Public Subnet Go to the VPC dashboard.\nSelect Subnets from the left navigation bar. Select the subnet with the name tag subnet-inference-1. Select Actions. Select Delete Subnet. Type ‘delete’ in the confirmation box and select Delete. Delete the Route Table Select Route tables from the left navigation bar.\nSelect the route table with the name tag table-inference-1. Select Actions. Select Delete route table. Type ‘delete’ in the confirmation box and select Delete. Delete the VPC Select Your VPCs from the left navigation bar.\nSelect the VPC with the name tag vpc-inference-1. Select Actions. Select Delete VPC. Type ‘delete’ in the confirmation box and select Delete. Delete the S3 bucket Empty the bucket. At the S3 Console.\nSelect the bucket with the name inference-bucket-1. Select Empty. Type ‘permanently delete’ in the confirmation box and select Empty. Select Delete. Once the bucket is empty, select Exit. Delete the bucket.\nSelect the bucket with the name inference-bucket-1. Select Delete. Type bucket-nlp-models-1 in the confirmation box Select Delete bucket.",
+    "description": "Clean up resources We will proceed to delete the resources in the following order:\nTerminate the EC2 instance Access the EC2 dashboard.\nSelect Instances from the left navigation bar. Select the instance with the name tag Inference Server. Select Instance State. Select Terminate Instance. Confirm the termination\nSelect Terminate (delete). Delete the Public Subnet Go to the VPC dashboard.\nSelect Subnets from the left navigation bar. Select the subnet with the name tag subnet-inference-1.",
     "tags": [],
     "title": "5. Clean Up",
     "uri": "/5-clean-up/index.html"
+  },
+  {
+    "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
+    "content": "In this section, we will make inference using the model we have trained in the previous section. We will use the requests library in Python to make a POST request to the server.\nREST API import requests # The API endpoint url = \"http://18.141.178.173:8501/v1/models/nmt:predict\" # Data to be sent data = { \"inputs\": { \"inputs\": [\"Hello, how are you?\"], \"maxlen\": 30, \"temperature\": 0.9 } } # A POST request to the API response = requests.post(url, json=data) # Print the response print(response.json()) in which 18.141.178.173 is the public IPv4 address of the EC2 instance.\nExample response:\n{ 'outputs': ['hallo , wie segeln losgehen ?'] }",
+    "description": "In this section, we will make inference using the model we have trained in the previous section. We will use the requests library in Python to make a POST request to the server.\nREST API import requests # The API endpoint url = \"http://18.141.178.173:8501/v1/models/nmt:predict\" # Data to be sent data = { \"inputs\": { \"inputs\": [\"Hello, how are you?\"], \"maxlen\": 30, \"temperature\": 0.9 } } # A POST request to the API response = requests.",
+    "tags": [],
+    "title": "4.3 Making Inference",
+    "uri": "/4-build-server-with-docker/3-making-inference/index.html"
   },
   {
     "breadcrumb": "",

@@ -6,7 +6,7 @@
     <description>Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.&#xA;Content VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Sep 2024 15:19:23 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 11 Sep 2024 02:24:51 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. VPC in AWS</title>
@@ -32,16 +32,16 @@
     <item>
       <title>4. Build Server with Docker</title>
       <link>http://localhost:1313/4-build-server-with-docker/index.html</link>
-      <pubDate>Tue, 10 Sep 2024 15:12:23 +0700</pubDate>
+      <pubDate>Wed, 11 Sep 2024 02:24:51 +0700</pubDate>
       <guid>http://localhost:1313/4-build-server-with-docker/index.html</guid>
-      <description>With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.&#xA;Note In this lab, we will use MobaXterm to establish the connectio&#xA;Content Test connection Serving with Docker</description>
+      <description>With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.&#xA;Note In this lab, we will use MobaXterm to establish the connection to EC2. You can use other SSH clients such as PuTTY or Terminal on Mac.&#xA;Content Test connection Serving with Docker Making Inference</description>
     </item>
     <item>
       <title>5. Clean Up</title>
       <link>http://localhost:1313/5-clean-up/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/5-clean-up/index.html</guid>
-      <description>This is a new chapter.</description>
+      <description>Clean up resources We will proceed to delete the resources in the following order:&#xA;Terminate the EC2 instance Access the EC2 dashboard.&#xA;Select Instances from the left navigation bar. Select the instance with the name tag Inference Server. Select Instance State. Select Terminate Instance. Confirm the termination&#xA;Select Terminate (delete). Delete the Public Subnet Go to the VPC dashboard.&#xA;Select Subnets from the left navigation bar. Select the subnet with the name tag subnet-inference-1.</description>
     </item>
   </channel>
 </rss>
