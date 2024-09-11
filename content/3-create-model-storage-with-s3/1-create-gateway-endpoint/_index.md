@@ -17,7 +17,7 @@ reading from S3.
 1. Go to [IAM Console](https://console.aws.amazon.com/iam/home):
     - Click *Roles*, then *Create role*.
     
-    ![IAM Console](/static/images/3-create-model-storage-with-s3/img-1.png)
+    ![IAM Console](/images/3-create-model-storage-with-s3/img-1.png)
 
     - **Trusted entity**: AWS service
     - **Use case**: EC2
@@ -35,18 +35,18 @@ reading from S3.
     - Click *Instances*, then select the instance you want to attach the role to.
     - Click *Actions*, then *Security*, then *Modify IAM role*.
     
-    ![EC2 Console](/static/images/3-create-model-storage-with-s3/img-2.png)
+    ![EC2 Console](/images/3-create-model-storage-with-s3/img-2.png)
 
     - **IAM role**: `role-ec2-s3-read-only`
     - Click *Update IAM Role*.
 
-    ![IAM Attach Role](/static/images/3-create-model-storage-with-s3/img-3.png)
+    ![IAM Attach Role](/images/3-create-model-storage-with-s3/img-3.png)
 
 ### Create Gateway Endpoint
 1. Go to [VPC Console](https://console.aws.amazon.com/vpc/home):
     - Click *Endpoints*, then *Create endpoint*.
     
-    ![VPC Console](/static/images/3-create-model-storage-with-s3/img-4.png)
+    ![VPC Console](/images/3-create-model-storage-with-s3/img-4.png)
 
 2. In the *Create endpoint* tab:
     - **Name tag**: `gw-endpoint-inference-1`
@@ -57,5 +57,5 @@ reading from S3.
     
     Leave the rest as default and click *Create endpoint*.
 
-    ![Create Endpoint](/static/images/3-create-model-storage-with-s3/img-5.png)
+    ![Create Endpoint](/images/3-create-model-storage-with-s3/img-5.png)
     
