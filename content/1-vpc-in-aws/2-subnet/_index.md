@@ -17,7 +17,7 @@ After creating a VPC, you can add EC2 instance(s) to the subnet.
     - Click *Subnets*.
     - Click *Create subnet*.
    
-    ![Subnet Console](/static//images/1-vpc-in-aws/img-4.png)
+    ![Subnet Console](/images/1-vpc-in-aws/img-4.png)
 
 2. At the *Create subnet* page, enter the following information:
     - **VPC**: Choose the VPC with tag `vpc-inference-1`. 

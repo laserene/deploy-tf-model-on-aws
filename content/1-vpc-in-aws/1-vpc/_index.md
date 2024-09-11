@@ -25,4 +25,4 @@ A VPC is a virtual network that closely resembles a traditional network that you
    - **IPv4 CIDR block**: `10.10.0.0/28`.
    - Click *Create VPC*.
    
-   ![Create VPC](/static//images/1-vpc-in-aws/img-2.png)
+   ![Create VPC](/images/1-vpc-in-aws/img-2.png)
