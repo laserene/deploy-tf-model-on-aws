@@ -1,6 +1,6 @@
-baseURL = 'https://sdthaker.github.io/sohamwhocodes/'
+baseURL = 'https://la-serene.github.io/DeployModelOnAWS/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Deploy '
 theme = 'hugo-theme-relearn'
 
 [params]
