@@ -9,7 +9,7 @@ weight = 1
 1. Go to [EC2 console](https://console.aws.amazon.com/ec2/home) and select the instance you just created. 
     - Copy the public IP address of the instance.
 
-    ![Copy Public IP](/images/4-build-server-with-docker/img-1.png)
+    ![Copy Public IP](/static/images/4-build-server-with-docker/img-1.png)
 
 2. Open MobaXterm, create a new SSH session:
     - **Remote host**: Paste the public IP address of the instance.
@@ -18,11 +18,11 @@ weight = 1
     In the **Advanced SSH settings** tab, go to **Use private key** and select the `.ppk` file you
     downloaded when creating the instance.
 
-    ![MobaXterm SSH](/images/4-build-server-with-docker/img-2.png)
+    ![MobaXterm SSH](/static/images/4-build-server-with-docker/img-2.png)
 
 3. Now you should be able to connect to the instance. Run the following command to check the current
 bucket in Amazon S3.
 
    `aws s3 ls`
 
-   ![AWS S3 List](/images/4-build-server-with-docker/img-3.png)
+   ![AWS S3 List](/static/images/4-build-server-with-docker/img-3.png)

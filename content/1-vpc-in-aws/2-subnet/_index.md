@@ -17,7 +17,7 @@ After creating a VPC, you can add EC2 instance(s) to the subnet.
     - Click *Subnets*.
     - Click *Create subnet*.
    
-    ![Subnet Console](/images/1-vpc-in-aws/img-4.png)
+    ![Subnet Console](/static//images/1-vpc-in-aws/img-4.png)
 
 2. At the *Create subnet* page, enter the following information:
     - **VPC**: Choose the VPC with tag `vpc-inference-1`. 
@@ -26,10 +26,10 @@ After creating a VPC, you can add EC2 instance(s) to the subnet.
     - **IPv4 subnet CIDR block**: `10.0.0.0/28`.
     - Click *Create subnet*.
 
-    ![Create Subnet](/images/1-vpc-in-aws/img-5.png)
+    ![Create Subnet](/static/images/1-vpc-in-aws/img-5.png)
 
 3. After the subnet is created, the console will look like this. 
-    ![Subnet Created](/images/1-vpc-in-aws/img-6.png)
+    ![Subnet Created](/static/images/1-vpc-in-aws/img-6.png)
 
    Since public subnet should have access to the Internet, you have to assign it a public IP address.
    - Click *Actions*. 
@@ -37,4 +37,4 @@ After creating a VPC, you can add EC2 instance(s) to the subnet.
    - Check *Enable auto-assign public IPv4 address*.
    - Click *Save*.
 
-   ![Config Subnet](/images/1-vpc-in-aws/img-7.png)
+   ![Config Subnet](/static/images/1-vpc-in-aws/img-7.png)

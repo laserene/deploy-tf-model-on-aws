@@ -15,7 +15,7 @@ inbound and outbound traffic for the instance.
     - Click *Security groups*.
     - Click *Create security group*.
 
-   ![Security Group Console](/images/1-vpc-in-aws/img-12.png)
+   ![Security Group Console](/static/images/1-vpc-in-aws/img-12.png)
 
 2. At the *Create security group* page, enter the following information:
     - **Name tag**: `security-group-inference-1`.
@@ -23,7 +23,7 @@ inbound and outbound traffic for the instance.
     - **VPC**: Choose the VPC with tag `vpc-inference-1`.
     - Click *Create security group*.
 
-   ![Create Security Group](/images/1-vpc-in-aws/img-13.png)
+   ![Create Security Group](/static/images/1-vpc-in-aws/img-13.png)
 
    You will need to create 3 inbound rules for this security group. EC2 instance needs to accept SSH
    connections from developers. Additionally, since you will serve the TensorFlow model with TensorFlow

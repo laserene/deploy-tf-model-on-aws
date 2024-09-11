@@ -17,7 +17,7 @@ A VPC is a virtual network that closely resembles a traditional network that you
    - Click *Your VPCs*.
    - Click *Create VPC*.
    
-   ![VPC Console](/images/1-vpc-in-aws/img-1.png)
+   ![VPC Console](/static/images/1-vpc-in-aws/img-1.png)
 
 2. At the *Create VPC* page, enter the following information: 
    - Choose *VPC only*.
@@ -25,4 +25,4 @@ A VPC is a virtual network that closely resembles a traditional network that you
    - **IPv4 CIDR block**: `10.10.0.0/28`.
    - Click *Create VPC*.
    
-   ![Create VPC](/images/1-vpc-in-aws/img-2.png)
+   ![Create VPC](/static//images/1-vpc-in-aws/img-2.png)
