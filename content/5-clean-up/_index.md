@@ -15,7 +15,7 @@ We will proceed to delete the resources in the following order:
     - Select *Instance State*.
     - Select *Terminate Instance*.
    
-    ![Terminate EC2](/static/images/5-clean-up/img-1.png)
+    ![Terminate EC2](/DeployModelOnAWS/images/5-clean-up/img-1.png)
 
 2. Confirm the termination
    - Select *Terminate (delete)*.
