@@ -2,6 +2,7 @@ baseURL = 'https://la-serene.github.io/DeployModelOnAWS/'
 languageCode = 'en-us'
 title = 'Deploy TensorFlow model on AWS with EC2 and Docker'
 theme = 'hugo-theme-relearn'
+canonifyURLs = true
 
 [params]
     themeVariant = 'relearn-light'

@@ -5,7 +5,7 @@ var relearn_search_index = [
     "description": "Gateway Endpoint is a gateway that helps you connect to S3 from your VPC without using Internet Gateway and no additional charge.\nBesides gateway endpoint, S3 and DynamoDB also support interface endpoint.\nIn this lab, in order for EC2 instance to have the right to access S3, you will create an IAM Role for reading from S3.\nCreate IAM Role for reading files from S3 Go to IAM Console:\nClick Roles, then Create role.",
     "tags": [],
     "title": "3.1 Create Gateway Endpoint",
-    "uri": "/DeployModelOnAWS/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html"
+    "uri": "/3-create-model-storage-with-s3/1-create-gateway-endpoint/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
@@ -13,7 +13,7 @@ var relearn_search_index = [
     "description": "Test Connection Go to EC2 console and select the instance you just created.\nCopy the public IP address of the instance. Open MobaXterm, create a new SSH session:\nRemote host: Paste the public IP address of the instance. Check Specify username and enter ec2-user. In the Advanced SSH settings tab, go to Use private key and select the .ppk file you downloaded when creating the instance.\nNow you should be able to connect to the instance.",
     "tags": [],
     "title": "4.1 Test Connection",
-    "uri": "/DeployModelOnAWS/4-build-server-with-docker/1-test-connection/index.html"
+    "uri": "/4-build-server-with-docker/1-test-connection/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
@@ -21,7 +21,7 @@ var relearn_search_index = [
     "description": "In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.\nContent VPC Subnet Route Table Security Group Internet Gateway",
     "tags": [],
     "title": "1. VPC in AWS",
-    "uri": "/DeployModelOnAWS/1-vpc-in-aws/index.html"
+    "uri": "/1-vpc-in-aws/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
@@ -29,7 +29,7 @@ var relearn_search_index = [
     "description": "Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.\nA VPC is a virtual network that closely resembles a traditional network that you’d operate in your own data center.\nCreate VPC Go to VPC management console.\nClick Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:",
     "tags": [],
     "title": "1.1 VPC",
-    "uri": "/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.html"
+    "uri": "/1-vpc-in-aws/1-vpc/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 3. Create Model Storage with S3",
@@ -37,7 +37,7 @@ var relearn_search_index = [
     "description": "Create S3 Bucket Go to S3 Console:\nClick Bucket, then Create bucket. In the Create bucket tab:\nBucket name: bucket-nlp-models-1 Leave the rest as default and click Create bucket.\nUpload Model to S3 In the bucket-nlp-models-1 bucket, click Upload.\nClick Add folder, navigate to the folder nmt on local machine then click Upload.",
     "tags": [],
     "title": "3.2 Upload Model to S3",
-    "uri": "/DeployModelOnAWS/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html"
+    "uri": "/3-create-model-storage-with-s3/2-upload-model-to-s3/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
@@ -45,7 +45,7 @@ var relearn_search_index = [
     "description": "In order to serve the model, you will need Docker installed on the server. Since EC2 instance doesn’t come with Docker pre-installed, you will need to install it manually.\nInstall Docker on EC2 Run the following commands to install Docker on EC2.\nUpdate the packages:\nsudo yum update -y Install Docker:\nsudo yum install docker -y Start the Docker service:\nsudo service docker start Serving Depending on the model you are serving, you can pull the corresponding TensorFlow Serving Docker image.",
     "tags": [],
     "title": "4.2 Serving with Docker",
-    "uri": "/DeployModelOnAWS/4-build-server-with-docker/2-serving-with-docker/index.html"
+    "uri": "/4-build-server-with-docker/2-serving-with-docker/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
@@ -53,7 +53,7 @@ var relearn_search_index = [
     "description": "Info Since there is currently no need for a database or other services, you will only create public subnet.\nA subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After creating a VPC, you can add EC2 instance(s) to the subnet.\nCreate Public Subnet At the VPC management console:\nClick Subnets. Click Create subnet. At the Create subnet page, enter the following information:",
     "tags": [],
     "title": "1.2 Subnet",
-    "uri": "/DeployModelOnAWS/1-vpc-in-aws/2-subnet/index.html"
+    "uri": "/1-vpc-in-aws/2-subnet/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
@@ -61,7 +61,7 @@ var relearn_search_index = [
     "description": "Create EC2 Instance Go to EC2 Console and click “Instances”:\nClick “Launch Instance” to create a new instance. In the Launch an instance tab:\nName tag: Inference Server AMI: Amazon Linux 2023 AMI Instance Type: t2.micro In the key pair section, create a new key pair named key-pair-inference-1 of type RSA in .ppk format and download it. This key pair will be used to connect to the instance.\nIn the Network settings section, select the Edit button.",
     "tags": [],
     "title": "2. Establish EC2 Server",
-    "uri": "/DeployModelOnAWS/2-establish-ec2-server/index.html"
+    "uri": "/2-establish-ec2-server/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
@@ -69,7 +69,7 @@ var relearn_search_index = [
     "description": "Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance at highest durability for a variety of use cases.\nIn this lab, you will use Amazon S3 to store current model files as well as any other versions in the future.\nContent Create Gateway Endpoint Upload model to S3",
     "tags": [],
     "title": "3. Create Model Storage with S3",
-    "uri": "/DeployModelOnAWS/3-create-model-storage-with-s3/index.html"
+    "uri": "/3-create-model-storage-with-s3/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
@@ -77,7 +77,7 @@ var relearn_search_index = [
     "description": "A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.\nCreate Route Table At the VPC management console:\nClick Route tables. Click Create route table. At the Create route table page, enter the following information:\nName tag: route-table-inference-1. VPC: Choose the VPC with tag vpc-inference-1. Click Create route table. After the route table is created, you will need to associate it to the public subnet.",
     "tags": [],
     "title": "1.3 Route Table",
-    "uri": "/DeployModelOnAWS/1-vpc-in-aws/3-route-table/index.html"
+    "uri": "/1-vpc-in-aws/3-route-table/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
@@ -85,7 +85,7 @@ var relearn_search_index = [
     "description": "With a working server, we can now harness Docker to serve the model. This chapter will guide you through the process of serving the model in a container and how to fetch translation from the server.\nNote In this lab, we will use MobaXterm to establish the connection to EC2. You can use other SSH clients such as PuTTY or Terminal on Mac.\nContent Test connection Serving with Docker Making Inference",
     "tags": [],
     "title": "4. Build Server with Docker",
-    "uri": "/DeployModelOnAWS/4-build-server-with-docker/index.html"
+    "uri": "/4-build-server-with-docker/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
@@ -93,7 +93,7 @@ var relearn_search_index = [
     "description": "A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.\nCreate Security Group At the VPC management console:\nClick Security groups. Click Create security group. At the Create security group page, enter the following information:\nName tag: security-group-inference-1. Description: Allow SSH to developers.",
     "tags": [],
     "title": "1.4 Security Group",
-    "uri": "/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.html"
+    "uri": "/1-vpc-in-aws/4-security-group/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 1. VPC in AWS",
@@ -101,7 +101,7 @@ var relearn_search_index = [
     "description": "An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet. It supports IPv4 and IPv6 traffic. It does not cause availability risks or bandwidth constraints on your network traffic.\nCreate Internet Gateway At the VPC management console:\nClick Internet gateways. Click Create route table. At the Create internet gateway page, enter the following information:\nName tag: internet-gateway-inference-1. Click Create internet gateway.",
     "tags": [],
     "title": "1.5 Internet Gateway",
-    "uri": "/DeployModelOnAWS/1-vpc-in-aws/5-internet-gateway/index.html"
+    "uri": "/1-vpc-in-aws/5-internet-gateway/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
@@ -109,7 +109,7 @@ var relearn_search_index = [
     "description": "Clean up resources We will proceed to delete the resources in the following order:\nTerminate the EC2 instance Access the EC2 dashboard.\nSelect Instances from the left navigation bar. Select the instance with the name tag Inference Server. Select Instance State. Select Terminate Instance. Confirm the termination\nSelect Terminate (delete). Delete the Public Subnet Go to the VPC dashboard.\nSelect Subnets from the left navigation bar. Select the subnet with the name tag subnet-inference-1.",
     "tags": [],
     "title": "5. Clean Up",
-    "uri": "/DeployModelOnAWS/5-clean-up/index.html"
+    "uri": "/5-clean-up/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker \u003e 4. Build Server with Docker",
@@ -117,7 +117,7 @@ var relearn_search_index = [
     "description": "In this section, we will make inference using the model we have trained in the previous section. We will use the requests library in Python to make a POST request to the server.\nREST API import requests # The API endpoint url = \"http://18.141.178.173:8501/v1/models/nmt:predict\" # Data to be sent data = { \"inputs\": { \"inputs\": [\"Hello, how are you?\"], \"maxlen\": 30, \"temperature\": 0.9 } } # A POST request to the API response = requests.",
     "tags": [],
     "title": "4.3 Making Inference",
-    "uri": "/DeployModelOnAWS/4-build-server-with-docker/3-making-inference/index.html"
+    "uri": "/4-build-server-with-docker/3-making-inference/index.html"
   },
   {
     "breadcrumb": "",
@@ -125,7 +125,7 @@ var relearn_search_index = [
     "description": "Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.\nContent VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up",
     "tags": [],
     "title": "Deploy TensorFlow Model on AWS with EC2 and Docker",
-    "uri": "/DeployModelOnAWS/index.html"
+    "uri": "/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
@@ -133,7 +133,7 @@ var relearn_search_index = [
     "description": "",
     "tags": [],
     "title": "Categories",
-    "uri": "/DeployModelOnAWS/categories/index.html"
+    "uri": "/categories/index.html"
   },
   {
     "breadcrumb": "Deploy TensorFlow Model on AWS with EC2 and Docker",
@@ -141,6 +141,6 @@ var relearn_search_index = [
     "description": "",
     "tags": [],
     "title": "Tags",
-    "uri": "/DeployModelOnAWS/tags/index.html"
+    "uri": "/tags/index.html"
   }
 ]
