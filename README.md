@@ -1,6 +1,6 @@
 # Introduction
 A workshop about deploying TensorFlow model on AWS. The model files used in 
-this workshop can be downloaded [here]().
+this workshop can be downloaded [here](https://github.com/la-serene/English-German-Translation-System/tree/main/servables/).
 
 # Architecture
 ![architecture](/static/images/machine_translation_sys.png)
