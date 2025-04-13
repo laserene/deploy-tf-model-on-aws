@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1.1 VPC :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
-    <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.html</link>
+    <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.html</link>
     <description>Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.&#xA;A VPC is a virtual network that closely resembles a traditional network that you’d operate in your own data center.&#xA;Create VPC Go to VPC management console.&#xA;Click Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

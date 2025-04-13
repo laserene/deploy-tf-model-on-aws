@@ -121,8 +121,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
-    "content": "Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.\nContent VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up",
-    "description": "Overall In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.\nContent VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up",
+    "content": "Overview In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.\nArchitecture description The architecture of the workshop is built using three main AWS services: Amazon VPC. Amazon EC2, Amazon S3:\nAmazon VPC provides a private, isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. Amazon EC2 provides scalable computing capacity in the AWS Cloud. In this lab, this instance will. Content VPC in AWS Establish EC2 Server Create Model Storage with S3 Build Server with Docker Clean up",
+    "description": "Overview In this lab, you’ll learn how to deploy a TensorFlow model on AWS with services such as VPC, EC2, etc. and Docker.\nArchitecture description The architecture of the workshop is built using three main AWS services: Amazon VPC. Amazon EC2, Amazon S3:\nAmazon VPC provides a private, isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. Amazon EC2 provides scalable computing capacity in the AWS Cloud.",
     "tags": [],
     "title": "Deploy TensorFlow Model on AWS with EC2 and Docker",
     "uri": "/index.html"

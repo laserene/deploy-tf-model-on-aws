@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1. VPC in AWS :: Deploy TensorFlow model on AWS with EC2 and Docker</title>
-    <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/index.html</link>
+    <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/index.html</link>
     <description>In order to create EC2 instances, you need to have a VPC. It is isolated from other virtual networks in the AWS cloud. You can launch your AWS resources, such as EC2 instances, into your VPC. You can specify an IP address range for the VPC, add Subnets, associate Security Groups, and configure Route Tables. Finally, you can connect your VPC to the internet via Internet Gateway.&#xA;Content VPC Subnet Route Table Security Group Internet Gateway</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Sep 2024 15:10:14 +0700</lastBuildDate>
-    <atom:link href="https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.1 VPC</title>
-      <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:09:31 +0700</pubDate>
-      <guid>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/1-vpc/index.html</guid>
       <description>Info All the AWS services in this lab will be initialized at the Asia Pacific (Singapore) region. Be sure to select this region before entering the lab.&#xA;A VPC is a virtual network that closely resembles a traditional network that you’d operate in your own data center.&#xA;Create VPC Go to VPC management console.&#xA;Click Your VPCs. Click Create VPC. At the Create VPC page, enter the following information:</description>
     </item>
     <item>
       <title>1.2 Subnet</title>
-      <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/2-subnet/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/2-subnet/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:09:40 +0700</pubDate>
-      <guid>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/2-subnet/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/2-subnet/index.html</guid>
       <description>Info Since there is currently no need for a database or other services, you will only create public subnet.&#xA;A subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After creating a VPC, you can add EC2 instance(s) to the subnet.&#xA;Create Public Subnet At the VPC management console:&#xA;Click Subnets. Click Create subnet. At the Create subnet page, enter the following information:</description>
     </item>
     <item>
       <title>1.3 Route Table</title>
-      <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/3-route-table/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/3-route-table/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:09:48 +0700</pubDate>
-      <guid>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/3-route-table/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/3-route-table/index.html</guid>
       <description>A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.&#xA;Create Route Table At the VPC management console:&#xA;Click Route tables. Click Create route table. At the Create route table page, enter the following information:&#xA;Name tag: route-table-inference-1. VPC: Choose the VPC with tag vpc-inference-1. Click Create route table. After the route table is created, you will need to associate it to the public subnet.</description>
     </item>
     <item>
       <title>1.4 Security Group</title>
-      <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:09:58 +0700</pubDate>
-      <guid>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/4-security-group/index.html</guid>
       <description>A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.&#xA;Create Security Group At the VPC management console:&#xA;Click Security groups. Click Create security group. At the Create security group page, enter the following information:&#xA;Name tag: security-group-inference-1. Description: Allow SSH to developers.</description>
     </item>
     <item>
       <title>1.5 Internet Gateway</title>
-      <link>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/5-internet-gateway/index.html</link>
+      <link>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/5-internet-gateway/index.html</link>
       <pubDate>Tue, 10 Sep 2024 15:10:14 +0700</pubDate>
-      <guid>https://la-serene.github.io/DeployModelOnAWS/1-vpc-in-aws/5-internet-gateway/index.html</guid>
+      <guid>http://localhost:1313/DeployModelOnAWS/1-vpc-in-aws/5-internet-gateway/index.html</guid>
       <description>An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet. It supports IPv4 and IPv6 traffic. It does not cause availability risks or bandwidth constraints on your network traffic.&#xA;Create Internet Gateway At the VPC management console:&#xA;Click Internet gateways. Click Create route table. At the Create internet gateway page, enter the following information:&#xA;Name tag: internet-gateway-inference-1. Click Create internet gateway.</description>
     </item>
   </channel>
